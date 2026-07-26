@@ -13,7 +13,7 @@
     --coral:#FF6B4A; --coral-dark:#E0512F; --amber:#FFB648; --gold:#C9962E; --sky:#4FB3E8; --mint:#3FBF8F; --crimson:#D5455C;
     --ink:#271742; --ink-soft:#6B5B86; --paper:#FFFFFF;
     --line:rgba(39,23,66,0.10); --shadow:0 10px 30px rgba(39,23,66,0.08); --shadow-lift:0 16px 36px rgba(39,23,66,0.14);
-    --display:'Fraunces', Georgia, serif; --body:'Plus Jakarta Sans', Arial, sans-serif; --mono:'Space Mono','Courier New',monospace;
+    --display:'Fraunces', Georgia, serif; --body:'Plus Jakarta Sans', Arial, sans-serif; --Connections:'Space Mono','Courier New',monospace;
   }
   *{box-sizing:border-box;}
   body{margin:0; background:var(--paper); color:var(--ink); font-family:var(--body); font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased; position:relative;}
@@ -36,13 +36,13 @@
   .wrap{max-width:1100px; margin:0 auto; padding:0 30px;}
   @media (max-width:640px){ .wrap{padding:0 20px;} }
   .eyebrow{font-family:var(--normal); font-size:20.0px; letter-spacing:0.1em; text-transform:uppercase; color:var(--coral); font-weight:700;}
-  .placeholder-tag{font-family:var(--mono); font-size:10px; background:var(--gold-50); color:#8A6A12; border:1px dashed var(--gold); padding:3px 9px; border-radius:14px; display:inline-block; margin-bottom:8px;}
-  .rb{display:inline-flex; align-items:center; gap:5px; font-family:var(--mono); font-size:9.5px; background:#FFF6DD; border:1px solid #D9B84A; color:#8A6A12; padding:3px 8px; border-radius:20px; margin-bottom:10px;}
+  .placeholder-tag{font-family:var(--Connections); font-size:10px; background:var(--gold-50); color:#8A6A12; border:1px dashed var(--gold); padding:3px 9px; border-radius:14px; display:inline-block; margin-bottom:8px;}
+  .rb{display:inline-flex; align-items:center; gap:5px; font-family:var(--Connections); font-size:9.5px; background:#FFF6DD; border:1px solid #D9B84A; color:#8A6A12; padding:3px 8px; border-radius:20px; margin-bottom:10px;}
   .rb::before{content:"✓";}
   .gold-rule{width:54px; height:2px; background:linear-gradient(90deg,var(--gold),var(--amber)); margin:24px 0; border:none;}
   .btn{font-family:var(--body); font-weight:600; font-size:14px; padding:13px 26px; border-radius:30px; background:var(--coral); color:#fff; border:none; cursor:pointer; display:inline-block; transition:transform .15s, box-shadow .15s;}
   .btn:hover{transform:translateY(-2px); box-shadow:0 8px 20px rgba(39,23,66,.35);}
-  .dl-btn{font-family:var(--mono); font-size:11px; background:var(--lavender-50); color:var(--indigo-700); padding:7px 14px; border-radius:20px; display:inline-block;}
+  .dl-btn{font-family:var(--Connections); font-size:11px; background:var(--lavender-50); color:var(--indigo-700); padding:7px 14px; border-radius:20px; display:inline-block;}
 
   /* ===== NAV ===== */
   .topnav{position:sticky; top:0; z-index:60; background:rgba(255,255,255,0.95); backdrop-filter:blur(8px); border-bottom:1px solid var(--line);}
@@ -94,39 +94,39 @@
   .strategy-line{font-size:clamp(16px,1.9vw,18.5px); line-height:1.85; color:#EDEBF3; max-width:680px; margin:0 auto;}
   .strategy-line b{color:#fff; font-weight:700;}
   .p-process{color:var(--mint);} .p-practice{color:var(--sky);} .p-perform{color:var(--coral);} .p-persist{color:var(--amber);}
-  .connector{font-family:var(--mono); font-size:13px; color:#B9A8D6; margin-top:40px; letter-spacing:.02em;}
-  .hero-scroll{position:absolute; bottom:26px; left:50%; transform:translateX(-50%); font-family:var(--mono); font-size:11px; color:#9C8BC0;}
+  .connector{font-family:var(--Connections); font-size:13px; color:#B9A8D6; margin-top:40px; letter-spacing:.02em;}
+  .hero-scroll{position:absolute; bottom:26px; left:50%; transform:translateX(-50%); font-family:var(--Connections); font-size:11px; color:#9C8BC0;}
 
   /* ===== ABOUT ===== */
   .top-grid{display:grid; grid-template-columns:200px 1fr; gap:44px; align-items:center;}
   @media (max-width:700px){ .top-grid{grid-template-columns:1fr; text-align:center;} }
-  .photo-ph{width:180px; height:180px; border-radius:50%; background:#fff; border:2px dashed var(--line); display:flex; align-items:center; justify-content:center; font-family:var(--mono); font-size:11px; color:var(--ink-soft); text-align:center; margin:0 auto;}
+  .photo-ph{width:180px; height:180px; border-radius:50%; background:#fff; border:2px dashed var(--line); display:flex; align-items:center; justify-content:center; font-family:var(--Connections); font-size:11px; color:var(--ink-soft); text-align:center; margin:0 auto;}
   blockquote.lead{font-family:var(--display); font-style:italic; font-size:clamp(20px,2.6vw,27px); color:var(--indigo-900); line-height:1.4; margin:0;}
-  blockquote.lead cite{display:block; margin-top:12px; font-family:var(--mono); font-size:12px; color:var(--ink-soft); font-style:normal;}
+  blockquote.lead cite{display:block; margin-top:12px; font-family:var(--Connections); font-size:12px; color:var(--ink-soft); font-style:normal;}
   .intro-text{margin-top:18px; font-size:15.5px; color:var(--ink-soft); max-width:560px;}
   .lead-quote{font-family:var(--display); font-style:italic; font-size:clamp(22px,2.8vw,30px); color:var(--indigo-900); line-height:1.4; margin:10px 0 0; max-width:600px;}
   .video-card{background:var(--indigo-900); border-radius:22px; padding:8px; box-shadow:var(--shadow); max-width:560px; margin:0 auto;}
   .video-frame{background:linear-gradient(135deg,#3A2266,#1C0F33); border-radius:16px; aspect-ratio:16/9; display:flex; align-items:center; justify-content:center;}
   .play-btn{width:54px; height:54px; border-radius:50%; background:rgba(255,255,255,0.16); border:1.5px solid rgba(255,255,255,0.5); display:flex; align-items:center; justify-content:center;}
-  .video-caption{text-align:center; font-family:var(--mono); font-size:11px; color:var(--ink-soft); margin-top:10px;}
+  .video-caption{text-align:center; font-family:var(--Connections); font-size:11px; color:var(--ink-soft); margin-top:10px;}
   .transition-line{text-align:center; font-family:var(--display); font-style:italic; font-size:18px; color:var(--ink-soft); max-width:520px; margin:0 auto;}
   .stat-strip{display:grid; grid-template-columns:repeat(4,1fr); gap:14px; max-width:760px; margin:0 auto;}
   @media (max-width:900px){ .stat-strip{grid-template-columns:repeat(3,1fr);} }
   @media (max-width:560px){ .stat-strip{grid-template-columns:repeat(2,1fr);} }
   .stat-card{background:#fff; border-radius:16px; padding:20px 12px; text-align:center; box-shadow:var(--shadow);}
   .stat-card b{font-family:var(--display); font-size:35px; color:var(--indigo-700); display:block;}
-  .stat-card span{font-family:var(--mono); font-size:9.5px; color:var(--ink-soft); line-height:1.4;}
+  .stat-card span{font-family:var(--Connections); font-size:9.5px; color:var(--ink-soft); line-height:1.4;}
   .journey{display:flex; flex-direction:column; max-width:620px; margin:0 auto;}
   .j-item{display:flex; gap:16px; position:relative; padding-bottom:26px;}
   .j-item:last-child{padding-bottom:0;}
   .j-item::before{content:""; position:absolute; left:22px; top:46px; bottom:0; width:2px; background:var(--line);}
   .j-item:last-child::before{display:none;}
   .j-icon{width:46px; height:46px; border-radius:50%; flex-shrink:0; display:flex; align-items:center; justify-content:center; box-shadow:var(--shadow);}
-  .j-text .yr{font-family:var(--mono); font-size:11px; color:var(--ink-soft);}
+  .j-text .yr{font-family:var(--Connections); font-size:11px; color:var(--ink-soft);}
   .j-text h4{font-size:15.5px; margin-top:3px;}
   .j-text p{font-size:13.5px; color:var(--ink-soft); margin-top:4px; margin-bottom:0;}
   .tag-row{display:flex; gap:10px; flex-wrap:wrap; justify-content:center;}
-  .tag-chip{font-family:var(--mono); font-size:12px; padding:8px 16px; border-radius:20px; color:#fff;}
+  .tag-chip{font-family:var(--Connections); font-size:12px; padding:8px 16px; border-radius:20px; color:#fff;}
   .reveal-chip{opacity:0; transform:translateY(14px) scale(0.92); transition:opacity .45s ease, transform .45s ease;}
   .reveal-chip.in{opacity:1; transform:translateY(0) scale(1);}
   .edu-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px;}
@@ -134,7 +134,7 @@
   @media (max-width:520px){ .edu-grid{grid-template-columns:1fr;} }
   .edu-card{background:#fff; border-radius:14px; padding:18px; text-align:center; box-shadow:var(--shadow);}
   .edu-card h5{font-size:14px; margin-bottom:4px;}
-  .edu-card span{font-family:var(--mono); font-size:11px; color:var(--ink-soft);}
+  .edu-card span{font-family:var(--Connections); font-size:11px; color:var(--ink-soft);}
   .skill-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:14px;}
   @media (max-width:880px){ .skill-grid{grid-template-columns:repeat(2,1fr);} }
   @media (max-width:520px){ .skill-grid{grid-template-columns:1fr;} }
@@ -144,38 +144,103 @@
   .skill-card p{font-size:11.5px; color:var(--ink-soft); margin-bottom:0;}
 
   /* ===== PORTFOLIO ===== */
-  .subtab-row{display:flex; gap:10px; margin:0 0 6px;}
-  .subtab{font-family:var(--body); font-weight:700; font-size:15px; padding:13px 28px; border-radius:24px; background:#fff; border:1.5px solid var(--line); color:var(--ink-soft); cursor:pointer; transition:all .2s;}
+  .pf-filter-row{display:flex; flex-wrap:nowrap; gap:8px; margin-bottom:34px; overflow-x:auto; -ms-overflow-style:none; scrollbar-width:none;}
+  .pf-filter-row::-webkit-scrollbar{display:none;}
+  .pf-filter-row .subtab{font-size:12px; padding:12px 20px; white-space:nowrap;}
+  @media (max-width:760px){ .pf-filter-row{flex-wrap:wrap; overflow-x:visible;} }
+  .subtab{font-family:var(--body); font-weight:700; font-size:30px; padding:13px 28px; border-radius:24px; background:#fff; border:1.5px solid var(--line); color:var(--ink-soft); cursor:pointer; transition:all .2s;}
   .subtab.on{background:var(--coral); color:#fff; border-color:var(--coral); box-shadow:0 8px 18px rgba(255,107,74,.3);}
-  .subpage{display:none;}
-  .subpage.active{display:block;}
-  .cat-block{padding:46px 0; border-bottom:1px solid var(--line);}
-  .cat-block:last-child{border-bottom:none;}
-  .cat-head{display:flex; align-items:center; gap:16px; margin-bottom:22px;}
-  .cat-icon{width:48px; height:48px; border-radius:14px; display:flex; align-items:center; justify-content:center; flex-shrink:0; box-shadow:var(--shadow);}
-  .cat-head h3{font-size:20px;}
-  .cat-head p{font-size:12.5px; color:var(--ink-soft); margin:3px 0 0;}
-  .slot-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:16px;}
-  @media (max-width:880px){ .slot-grid{grid-template-columns:repeat(2,1fr);} }
-  @media (max-width:520px){ .slot-grid{grid-template-columns:1fr;} }
-  .slot{border:1.5px dashed var(--line); border-radius:16px; background:#fff; min-height:120px; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:16px; color:var(--ink-soft); transition:transform .2s, box-shadow .2s, border-color .2s;}
-  .slot:hover{transform:translateY(-4px); box-shadow:var(--shadow-lift); border-color:var(--accent-c, var(--coral));}
-  .slot .plus{width:30px; height:30px; border-radius:50%; display:flex; align-items:center; justify-content:center; background:var(--accent-soft, var(--lavender-50)); color:var(--accent-c, var(--coral)); font-family:var(--display); font-size:18px; margin-bottom:8px;}
-  .slot span{font-family:var(--mono); font-size:10.5px;}
-  .process-toggle-row{display:flex; gap:10px; margin-bottom:46px;}
-  .ptoggle{font-family:var(--body); font-weight:700; font-size:14.5px; padding:12px 24px; border-radius:22px; background:#fff; border:1.5px solid var(--line); color:var(--ink-soft); cursor:pointer; transition:all .2s;}
-  .ptoggle.on{background:var(--indigo-900); color:#fff; border-color:var(--indigo-900); box-shadow:0 8px 18px rgba(39,23,66,.25);}
-  .ptrack{display:none;}
-  .ptrack.active{display:block;}
-  .ptimeline{position:relative; padding-left:34px;}
-  .ptimeline::before{content:""; position:absolute; left:14px; top:10px; bottom:10px; width:2px; background:var(--line);}
-  .pstep{background:#fff; border-radius:18px; box-shadow:var(--shadow); margin-bottom:18px; position:relative; overflow:hidden; border-left:5px solid var(--step-c, var(--coral));}
-  .pstep-head{display:flex; align-items:center; gap:14px; padding:20px 24px;}
-  .pstep-num{width:34px; height:34px; border-radius:50%; background:var(--step-soft, var(--lavender-50)); color:var(--step-c, var(--coral)); font-family:var(--display); font-size:15px; display:flex; align-items:center; justify-content:center; flex-shrink:0;}
-  .pstep-head h4{font-size:16px; flex:1;}
-  .pstep-doc{margin:0 24px 20px; border:1.5px dashed var(--line); border-radius:10px; padding:11px 16px; font-family:var(--mono); font-size:11px; color:var(--ink-soft); display:flex; align-items:center; gap:8px;}
-  .pstep-doc .plus2{color:var(--step-c, var(--coral)); font-family:var(--display); font-size:16px;}
-  .pstep-note{margin:0 24px 18px; font-size:13.5px; color:var(--ink-soft);}
+
+  .pf-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); gap:22px;}
+  .pf-card{background:#fff; border-radius:18px; box-shadow:var(--shadow); padding:26px 26px 24px; border-left:6px solid var(--accent-c,var(--coral)); cursor:pointer; transition:transform .2s, box-shadow .2s; display:flex; flex-direction:column; gap:12px;}
+  .pf-card:hover{transform:translateY(-4px); box-shadow:var(--shadow-lift);}
+  .pf-card-meta{display:flex; align-items:center; justify-content:space-between; gap:10px;}
+  .pf-card-type{font-family:var(--Connections); font-size:10.5px; letter-spacing:.04em; text-transform:uppercase; font-weight:700; color:var(--accent-c,var(--coral));}
+  .pf-card-year{font-family:var(--Connections); font-size:11px; color:var(--ink-soft);}
+  .pf-card h3{font-size:19px; line-height:1.25;}
+  .pf-card-hook{font-size:13.5px; color:var(--ink-soft); line-height:1.55;}
+  .pf-card-skills{display:flex; flex-wrap:wrap; gap:6px;}
+  .pf-skill-tag{font-family:var(--Connections); font-size:10px; letter-spacing:.02em; padding:4px 10px; border-radius:12px; background:var(--lavender-50); color:var(--indigo-700); font-weight:600;}
+  .pf-card-scope{font-family:var(--Connections); font-size:10.5px; color:var(--ink-soft); display:flex; align-items:center; gap:8px;}
+  .pf-card-scope b{font-weight:700; letter-spacing:.04em; text-transform:uppercase; color:var(--ink);}
+  .pf-addie-dot{width:24px; height:7px; border-radius:3px; display:inline-block;}
+  .pf-addie-dot.on{background:var(--accent-c,var(--coral));}
+  .pf-addie-dot.off{background:var(--line);}
+  .pf-card-cta{margin-top:auto; font-family:var(--Connections); font-size:11px; font-weight:700; color:var(--accent-c,var(--coral)); display:flex; align-items:center; gap:6px;}
+  .pf-card-cta svg{width:11px; height:11px;}
+
+  /* modal */
+  .pf-overlay{position:fixed; inset:0; z-index:500; background:rgba(39,23,66,0.55); backdrop-filter:blur(6px); display:flex; align-items:flex-start; justify-content:center; padding:40px 16px; overflow-y:auto; opacity:0; pointer-events:none; transition:opacity .25s;}
+  .pf-overlay.open{opacity:1; pointer-events:all;}
+  .pf-modal{background:#fff; border-radius:22px; width:100%; max-width:980px; box-shadow:var(--shadow-lift); margin-bottom:40px; transform:translateY(24px); transition:transform .28s ease;}
+  .pf-overlay.open .pf-modal{transform:translateY(0);}
+  .pf-modal-head{padding:32px 34px 0; display:flex; align-items:flex-start; justify-content:space-between; gap:16px;}
+  .pf-modal-eyebrow{font-family:var(--Connections); font-weight:700; font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--coral);}
+  .pf-modal-title{font-size:clamp(22px,3vw,28px); margin-top:6px; color:var(--indigo-900);}
+  .pf-modal-close{background:#fff; border:1.5px solid var(--line); border-radius:50%; width:38px; height:38px; cursor:pointer; color:var(--ink-soft); flex-shrink:0; display:flex; align-items:center; justify-content:center; font-size:16px; transition:all .18s;}
+  .pf-modal-close:hover{background:var(--lavender-50); color:var(--indigo-900);}
+  .pf-modal-body{display:flex; gap:0; padding:26px 34px 36px;}
+  .pf-sidebar{width:210px; flex-shrink:0; display:flex; flex-direction:column; gap:22px; padding-right:28px; border-right:1px solid var(--line);}
+  .pf-meta-group{display:flex; flex-direction:column; gap:5px;}
+  .pf-meta-label{font-family:var(--Connections); font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-soft); font-weight:700;}
+  .pf-meta-value{font-size:13.5px; color:var(--ink); font-weight:600; line-height:1.4;}
+  .pf-meta-value.small{font-size:12.5px; color:var(--ink-soft); font-weight:400;}
+  .pf-sidebar-skills{display:flex; flex-direction:column; gap:6px;}
+  .pf-sidebar-skill{font-size:12px; color:var(--ink-soft); line-height:1.4; padding-left:11px; border-left:2px solid var(--lavender-50);}
+  .pf-sidebar-tools{display:flex; flex-wrap:wrap; gap:5px;}
+  .pf-tool-tag{font-family:var(--Connections); font-size:10px; padding:3px 8px; border-radius:8px; background:var(--lavender-50); color:var(--indigo-700);}
+
+  .pf-content{flex:1; padding-left:30px; min-width:0;}
+  .pf-tabs{display:flex; gap:4px; border-bottom:2px solid var(--line); margin-bottom:24px; flex-wrap:wrap;}
+  .pf-tab-btn{font-family:var(--body); font-weight:700; font-size:13px; padding:11px 16px; background:none; border:none; cursor:pointer; color:var(--ink-soft); position:relative; border-radius:12px 12px 0 0;}
+  .pf-tab-btn.active{color:var(--coral);}
+  .pf-tab-btn.active::after{content:""; position:absolute; bottom:-2px; left:10px; right:10px; height:2px; background:var(--coral); border-radius:1px;}
+  .pf-tab-btn.compact{font-size:11.5px; text-transform:none; padding:11px 12px; max-width:230px; line-height:1.3; font-weight:600;}
+  .pf-tab-panel{display:none; animation:pfFade .18s ease;}
+  .pf-tab-panel.active{display:block;}
+  @keyframes pfFade{from{opacity:0; transform:translateY(4px);} to{opacity:1; transform:translateY(0);}}
+
+  .pf-overview p{margin-bottom:14px; font-size:14.5px; line-height:1.72; color:var(--ink);}
+  .pf-overview strong{color:var(--indigo-700); font-weight:700;}
+  .pf-disclosure{font-size:12.5px; color:var(--ink-soft); font-style:italic; line-height:1.6; margin-bottom:18px; padding-bottom:16px; border-bottom:1px solid var(--line);}
+  .pf-team-badge{display:inline-flex; align-items:center; gap:6px; font-family:var(--Connections); font-size:10.5px; letter-spacing:.02em; padding:6px 13px; border-radius:16px; background:var(--lavender-50); color:var(--indigo-700); font-weight:700; margin-bottom:16px;}
+
+  .pf-phase-block{margin-bottom:8px;}
+  .pf-phase-head{display:flex; align-items:center; gap:10px;}
+  .pf-phase-dot{width:28px; height:28px; border-radius:50%; background:var(--coral); color:#fff; font-family:var(--Connections); font-size:11px; font-weight:700; display:flex; align-items:center; justify-content:center; flex-shrink:0;}
+  .pf-phase-dot.empty{background:var(--line); color:var(--ink-soft);}
+  .pf-phase-name{font-size:16px; color:var(--indigo-900);}
+  .pf-phase-blurb{font-size:12.5px; color:var(--ink-soft); margin:5px 0 0 38px; max-width:58ch;}
+
+  .pf-artifact-grid{display:flex; flex-direction:column; gap:12px; margin:16px 0 26px 38px;}
+  .pf-artifact{display:flex; align-items:flex-start; gap:14px; padding:15px 17px; border:1.5px solid var(--line); border-radius:14px; background:var(--lavender-50); text-decoration:none; color:inherit; transition:border-color .18s, transform .18s;}
+  .pf-artifact:hover{border-color:var(--coral); transform:translateY(-2px);}
+  .pf-artifact-icon{width:38px; height:38px; border-radius:11px; flex-shrink:0; display:flex; align-items:center; justify-content:center; font-size:17px; background:#fff; box-shadow:var(--shadow);}
+  .pf-artifact-info{flex:1;}
+  .pf-artifact-workstream{font-family:var(--Connections); font-size:10px; letter-spacing:.02em; color:var(--indigo-700); background:var(--sky-50); display:inline-block; padding:3px 9px; border-radius:8px; margin-bottom:6px; font-weight:700;}
+  .pf-artifact-title{font-weight:700; font-size:14px; color:var(--ink); line-height:1.3; margin-bottom:4px;}
+  .pf-artifact-desc{font-size:12.5px; color:var(--ink-soft); line-height:1.5;}
+  .pf-artifact-meta-line{font-family:var(--Connections); font-size:10px; color:var(--ink-soft); margin-top:7px;}
+  .pf-artifact-status{font-family:var(--Connections); font-size:10.5px; color:var(--coral-dark); font-weight:700; letter-spacing:.02em; margin-top:6px; display:block;}
+  .pf-phase-empty{margin:14px 0 22px 38px; border:1.5px dashed var(--line); border-radius:12px; padding:13px 16px; font-family:var(--Connections); font-size:11px; color:var(--ink-soft); letter-spacing:.02em;}
+
+  .pf-case-study{display:flex; flex-direction:column; gap:22px;}
+  .pf-cs-part{border-left:4px solid var(--lavender-50); padding-left:16px;}
+  .pf-cs-part.highlight{border-left-color:var(--coral);}
+  .pf-cs-number{font-family:var(--Connections); font-size:10.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--coral); font-weight:700; margin-bottom:5px;}
+  .pf-cs-title{font-size:16.5px; color:var(--indigo-900); margin-bottom:8px;}
+  .pf-cs-body{font-size:14px; color:var(--ink-soft); line-height:1.72;}
+
+  @media (max-width:760px){
+    .pf-grid{grid-template-columns:1fr;}
+    .pf-modal-body{flex-direction:column;}
+    .pf-sidebar{width:100%; border-right:none; border-bottom:1px solid var(--line); padding-right:0; padding-bottom:18px; margin-bottom:18px;}
+    .pf-content{padding-left:0;}
+    .pf-modal-head{padding:24px 20px 0;}
+    .pf-modal-body{padding:18px 20px 26px;}
+    .pf-phase-blurb, .pf-artifact-grid, .pf-phase-empty{margin-left:0;}
+  }
+
 
   /* ===== SERVICES (Work With Me) ===== */
   .service-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:18px;}
@@ -197,12 +262,12 @@
   .theme-card .ic{width:34px; height:34px; margin-bottom:10px;}
   .theme-card h5{font-size:14.5px; margin-bottom:6px;}
   .theme-card p{font-size:12.5px; color:var(--ink-soft); margin-bottom:6px;}
-  .theme-card .src{font-family:var(--mono); font-size:10px; color:var(--coral-dark);}
+  .theme-card .src{font-family:var(--Connections); font-size:10px; color:var(--coral-dark);}
   .pub-card{background:#fff; border-radius:16px; padding:20px 22px; box-shadow:var(--shadow); margin-bottom:14px; display:flex; gap:16px; align-items:flex-start;}
   .pub-card .ic{width:30px; height:30px; flex-shrink:0;}
   .pub-card h5{font-size:14.5px; margin-bottom:4px;}
   .pub-card p{font-size:13px; color:var(--ink-soft); margin-bottom:0;}
-  .pub-card .meta{font-family:var(--mono); font-size:10.5px; color:var(--coral-dark);}
+  .pub-card .meta{font-family:var(--Connections); font-size:10.5px; color:var(--coral-dark);}
   .inquiry-card{background:#fff; border-radius:16px; padding:18px 20px; box-shadow:var(--shadow); border-left:4px solid var(--coral); margin-bottom:12px;}
   .inquiry-card h5{font-size:14.5px; margin-bottom:4px;}
   .inquiry-card p{font-size:13px; color:var(--ink-soft); margin-bottom:0;}
@@ -216,7 +281,7 @@
   .topic-pill.on{background:var(--lavender-50); border-color:var(--indigo-500);}
   .topic-pill .ic{width:24px; height:24px; flex-shrink:0; margin-top:2px;}
   .topic-pill h5{font-size:13.5px; margin-bottom:3px;}
-  .topic-pill span{font-family:var(--mono); font-size:10px; color:var(--ink-soft);}
+  .topic-pill span{font-family:var(--Connections); font-size:10px; color:var(--ink-soft);}
   .newsletter{background:var(--indigo-900); color:#fff; border-radius:20px; padding:34px; margin-top:20px; display:flex; justify-content:space-between; align-items:center; gap:20px; flex-wrap:wrap;}
   .newsletter h4{color:#fff; font-size:19px;}
   .newsletter input{font-family:var(--body); border:none; border-radius:24px; padding:11px 18px; font-size:13.5px; min-width:220px;}
@@ -226,9 +291,9 @@
   .testimonial-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:18px;}
   @media (max-width:880px){ .testimonial-grid{grid-template-columns:1fr;} }
   .testimonial-card{background:#fff; border-radius:18px; padding:22px; box-shadow:var(--shadow); text-align:center;}
-  .t-avatar{width:56px; height:56px; border-radius:50%; background:var(--lavender-50); border:2px dashed var(--line); margin:0 auto 14px; display:flex; align-items:center; justify-content:center; font-family:var(--mono); font-size:10px; color:var(--ink-soft);}
+  .t-avatar{width:56px; height:56px; border-radius:50%; background:var(--lavender-50); border:2px dashed var(--line); margin:0 auto 14px; display:flex; align-items:center; justify-content:center; font-family:var(--Connections); font-size:10px; color:var(--ink-soft);}
   .testimonial-card blockquote{font-family:var(--display); font-style:italic; font-size:14.5px; color:var(--ink-soft); margin-bottom:12px;}
-  .testimonial-card .who{font-family:var(--mono); font-size:11px; color:var(--coral-dark);}
+  .testimonial-card .who{font-family:var(--Connections); font-size:11px; color:var(--coral-dark);}
   .approach-card{background:var(--gold-50); border:1px dashed var(--gold); border-radius:18px; padding:24px; margin-top:36px;}
   .approach-card h4{font-size:16px; margin-bottom:10px;}
   .approach-card ol{margin:0; padding-left:20px; font-size:14px; color:var(--ink-soft);}
@@ -246,9 +311,9 @@
   .course-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:20px;}
   @media (max-width:700px){ .course-grid{grid-template-columns:1fr;} }
   .course-card{background:#fff; border-radius:18px; overflow:hidden; box-shadow:var(--shadow);}
-  .course-thumb{height:110px; display:flex; align-items:center; justify-content:center; color:#fff; font-family:var(--mono); font-size:11px;}
+  .course-thumb{height:110px; display:flex; align-items:center; justify-content:center; color:#fff; font-family:var(--Connections); font-size:11px;}
   .course-body{padding:20px 22px;}
-  .course-body .tag{font-family:var(--mono); font-size:10px; color:var(--coral-dark); text-transform:uppercase;}
+  .course-body .tag{font-family:var(--Connections); font-size:10px; color:var(--coral-dark); text-transform:uppercase;}
   .course-body h5{font-size:16px; margin-top:6px; margin-bottom:8px;}
   .course-body p{font-size:13.5px; color:var(--ink-soft); margin-bottom:14px;}
 
@@ -256,12 +321,12 @@
   .connect-grid{display:grid; grid-template-columns:1fr 1fr; gap:40px;}
   @media (max-width:880px){ .connect-grid{grid-template-columns:1fr;} }
   .connect-form{background:#fff; border-radius:20px; padding:32px; box-shadow:var(--shadow);}
-  .connect-form label{font-family:var(--mono); font-size:10.5px; text-transform:uppercase; color:var(--ink-soft); display:block; margin-bottom:6px;}
+  .connect-form label{font-family:var(--Connections); font-size:10.5px; text-transform:uppercase; color:var(--ink-soft); display:block; margin-bottom:6px;}
   .connect-form input, .connect-form textarea{width:100%; border:1.5px solid var(--line); border-radius:10px; padding:11px 14px; font-family:var(--body); font-size:14px; margin-bottom:14px;}
   .connect-form button{font-family:var(--body); font-weight:600; background:var(--coral); color:#fff; border:none; padding:12px 26px; border-radius:24px; cursor:pointer;}
   .direct-info{background:var(--indigo-900); color:#fff; border-radius:20px; padding:32px;}
   .direct-info h4{color:#fff; font-size:17px; margin-bottom:16px;}
-  .connect-row{display:flex; gap:10px; align-items:center; font-family:var(--mono); font-size:13.5px; margin-bottom:14px;}
+  .connect-row{display:flex; gap:10px; align-items:center; font-family:var(--Connections); font-size:13.5px; margin-bottom:14px;}
   .connect-row .ic{width:18px; height:18px; flex-shrink:0;}
 
   .reveal{opacity:0; transform:translateY(14px); transition:opacity .5s ease, transform .5s ease;}
@@ -399,122 +464,114 @@
     <div class="wrap">
       <span class="eyebrow">Portfolio</span>
       <h1>The Work, and How It Gets Made.</h1>
-     
+      <p>Every project below is organized by ADDIE — Analysis, Design, Development, Implementation, Evaluation — the same model of instructional development, applied consistently, whether the artifacts came from a graduate course or a real client engagement. Click a card to open the full case study.</p>
     </div>
   </section>
 
   <section style="padding-top:40px;">
     <div class="wrap">
-      <div class="subtab-row">
-        <button class="subtab on" data-sub="work">Work</button>
-        <button class="subtab" data-sub="process">Process</button>
+      <div class="pf-filter-row" id="pfFilterRow">
+        <button class="subtab on" data-filter="all">All Projects</button>
+        <button class="subtab" data-filter="performance">Performance Analysis</button>
+        <button class="subtab" data-filter="elearning">eLearning Design</button>
+        <button class="subtab" data-filter="professional">Professional Samples</button>
+        <button class="subtab" data-filter="pm">Project Management</button>
+        <button class="subtab" data-filter="coursework">Additional Coursework</button>
+      </div>
+
+      <div class="pf-grid" id="pfGrid">
+
+        <div class="pf-card reveal" data-category="performance" data-id="meridian" style="--accent-c:#FF7F50;" tabindex="0" role="button" aria-haspopup="dialog">
+          <div class="pf-card-meta"><span class="pf-card-type">Performance Analysis + ID</span><span class="pf-card-year">2024–25</span></div>
+          <h3>Medication Administration Performance Improvement</h3>
+          <p class="pf-card-hook">An 11.2% medication error rate — five times the industry benchmark — traced to a system that was redesigned without redesigning its training, support, or feedback.</p>
+          <div class="pf-card-skills"><span class="pf-skill-tag">Root Cause Analysis</span><span class="pf-skill-tag">JTA / CTA</span><span class="pf-skill-tag">Gilbert's BEM</span><span class="pf-skill-tag">Kirkpatrick / Phillips</span></div>
+          <div class="pf-card-scope"><b>ADDIE</b>
+		  <span class="pf-addie-dot on"></span>
+		  <span class="pf-addie-dot off"></span>
+		  <span class="pf-addie-dot off"></span>
+		  <span class="pf-addie-dot on"></span>
+		  <span class="pf-addie-dot off"></span>
+		  </div>
+          <span class="pf-card-cta">View project <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 6h8M7 3l3 3-3 3"/></svg></span>
+        </div>
+
+        <div class="pf-card reveal" data-category="performance" data-id="northfield" style="--accent-c:#FF7F50;" tabindex="0" role="button" aria-haspopup="dialog">
+          <div class="pf-card-meta"><span class="pf-card-type">Full Performance Consulting</span><span class="pf-card-year">2024–25</span></div>
+          <h3>Wafer Cleaning &amp; PM/PLM Training — Performance Consulting</h3>
+          <p class="pf-card-hook">One client, two performance problems: $124K in wafer-cleaning inefficiency taken through to a recommendation, and a PM training request deliberately held at the front-end-analysis stage.</p>
+          <div class="pf-card-skills"><span class="pf-skill-tag">Work-Worker-World</span><span class="pf-skill-tag">Gilbert's BEM</span><span class="pf-skill-tag">Harless's FEA</span><span class="pf-skill-tag">Rummler-Brache</span></div>
+          <div class="pf-card-scope"><b>ADDIE</b><span class="pf-addie-dot on"></span><span class="pf-addie-dot off"></span><span class="pf-addie-dot off"></span><span class="pf-addie-dot off"></span><span class="pf-addie-dot off"></span></div>
+          <span class="pf-card-cta">View project <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 6h8M7 3l3 3-3 3"/></svg></span>
+        </div>
+
+        <div class="pf-card reveal" data-category="elearning" data-id="cyberhygiene" style="--accent-c:#FF7F50;" tabindex="0" role="button" aria-haspopup="dialog">
+          <div class="pf-card-meta"><span class="pf-card-type">eLearning Design + Evaluation</span><span class="pf-card-year">2024–25</span></div>
+          <h3>Cyber Hygiene for Healthcare — eLearning Module</h3>
+          <p class="pf-card-hook">A 30-minute scenario-based eLearning for clinical staff where phishing decisions arrive in the same seconds as patient care — three personas, one module.</p>
+          <div class="pf-card-skills"><span class="pf-skill-tag">Persona Design</span><span class="pf-skill-tag">Scenario-Based Design</span><span class="pf-skill-tag">Formative Evaluation</span></div>
+          <div class="pf-card-scope"><b>ADDIE</b><span class="pf-addie-dot off"></span><span class="pf-addie-dot on"></span><span class="pf-addie-dot on"></span><span class="pf-addie-dot off"></span><span class="pf-addie-dot on"></span></div>
+          <span class="pf-card-cta">View project <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 6h8M7 3l3 3-3 3"/></svg></span>
+        </div>
+
+        <div class="pf-card reveal" data-category="elearning" data-id="climatefinance" style="--accent-c:#FF7F50;" tabindex="0" role="button" aria-haspopup="dialog">
+          <div class="pf-card-meta"><span class="pf-card-type">Blended Learning Design</span><span class="pf-card-year">2025</span></div>
+          <h3>Climate Finance for Indian Cities (CF-101)</h3>
+          <p class="pf-card-hook">40 hours for Indian city finance officials — not awareness training, a program that ends with each participant submitting a real funding proposal.</p>
+          <div class="pf-card-skills"><span class="pf-skill-tag">Content Analysis (Gagné)</span><span class="pf-skill-tag">Blended Architecture</span><span class="pf-skill-tag">Multilingual Design</span></div>
+          <div class="pf-card-scope"><b>ADDIE</b><span class="pf-addie-dot off"></span><span class="pf-addie-dot on"></span><span class="pf-addie-dot off"></span><span class="pf-addie-dot on"></span><span class="pf-addie-dot off"></span></div>
+          <span class="pf-card-cta">View project <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 6h8M7 3l3 3-3 3"/></svg></span>
+        </div>
+
+        <div class="pf-card reveal" data-category="professional" data-id="professional" style="--accent-c:#FF7F50;" tabindex="0" role="button" aria-haspopup="dialog">
+          <div class="pf-card-meta"><span class="pf-card-type">Professional Work Samples</span><span class="pf-card-year">2016–2024</span></div>
+          <h3>Selected Professional Engagements</h3>
+          <p class="pf-card-hook">Fifteen years across ten industries: full built modules, a UX proof-of-concept, a storyboard, and a live facilitator's workshop — seven engagements, seven different theoretical lenses.</p>
+          <div class="pf-card-skills"><span class="pf-skill-tag">eLearning Development</span><span class="pf-skill-tag">Storyboarding</span><span class="pf-skill-tag">Workshop Facilitation</span></div>
+          <div class="pf-card-scope"><b>Scope</b><span>7 artifacts · Design + Development</span></div>
+          <span class="pf-card-cta">View samples <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 6h8M7 3l3 3-3 3"/></svg></span>
+        </div>
+
+        <div class="pf-card reveal" data-category="pm" data-id="beattheclock" style="--accent-c:#FF7F50;" tabindex="0" role="button" aria-haspopup="dialog">
+          <div class="pf-card-meta"><span class="pf-card-type">Gamification + Project Management</span><span class="pf-card-year">2025</span></div>
+          <h3>Beat the Clock: A Time Management Quest</h3>
+          <p class="pf-card-hook">A gamified eLearning design where the mechanics serve the learning objective — built on a six-phase WBS with real sign-off gates, not just a design idea.</p>
+          <div class="pf-card-skills"><span class="pf-skill-tag">Gamification Design</span><span class="pf-skill-tag">Work Breakdown Structure</span><span class="pf-skill-tag">Resource Estimation</span></div>
+          <div class="pf-card-scope"><b>Scope</b><span>Full project-management package</span></div>
+          <span class="pf-card-cta">View project <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 6h8M7 3l3 3-3 3"/></svg></span>
+        </div>
+
+        <div class="pf-card reveal" data-category="coursework" data-id="coursework" style="--accent-c:#FF7F50;" tabindex="0" role="button" aria-haspopup="dialog">
+          <div class="pf-card-meta"><span class="pf-card-type">Additional Coursework</span><span class="pf-card-year">2025–26</span></div>
+          <h3>Coursework in Practice</h3>
+          <p class="pf-card-hook">Three cross-cutting themes from coursework outside the six flagship case studies — how people actually think while learning, learning as participation rather than delivery, and what makes an online environment work at all.</p>
+          <div class="pf-card-skills"><span class="pf-skill-tag">Computational Thinking</span><span class="pf-skill-tag">Sociocultural Design</span><span class="pf-skill-tag">E-Learning Environments</span></div>
+          <div class="pf-card-scope"><b>Scope</b><span>13 artifacts · 3 themes</span></div>
+          <span class="pf-card-cta">View coursework <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 6h8M7 3l3 3-3 3"/></svg></span>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <div class="subpage active" id="sub-work">
-    <section style="padding-top:0;">
-      <div class="wrap">
-        <p class="placeholder-tag">All artifacts below are placeholders</p>
+  <!-- PORTFOLIO MODAL -->
+  <div class="pf-overlay" id="pfOverlay" role="dialog" aria-modal="true" aria-labelledby="pfModalTitle">
+    <div class="pf-modal" id="pfModal">
+      <div class="pf-modal-head">
+        <div>
+          <span class="pf-modal-eyebrow" id="pfModalEyebrow"></span>
+          <h2 class="pf-modal-title" id="pfModalTitle"></h2>
+        </div>
+        <button class="pf-modal-close" id="pfCloseBtn" aria-label="Close">✕</button>
       </div>
-    </section>
-
-    <section class="tone-1">
-      <div class="wrap cat-block reveal" style="--accent-c:#6E48B8; --accent-soft:#F6F2FB; border-bottom:none;">
-        <div class="cat-head"><div class="cat-icon" style="background:#F6F2FB;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#6E48B8" stroke-width="2"/><path d="M12 7v5l4 2" stroke="#6E48B8" stroke-width="2"/></svg></div><div><h3>Digital &amp; Self-Paced Learning</h3><p>eLearning / WBT · Microlearning · Gamified · Scenario-Based · Simulation-Based (incl. SAP)</p></div></div>
-        <div class="slot-grid">
-          <div class="slot"><div class="plus">+</div><span>Add eLearning Course</span></div>
-          <div class="slot"><div class="plus">+</div><span>Add Microlearning</span></div>
-          <div class="slot"><div class="plus">+</div><span>Add Gamified Module</span></div>
-          <div class="slot"><div class="plus">+</div><span>Add Scenario / Simulation</span></div>
+      <div class="pf-modal-body">
+        <aside class="pf-sidebar" id="pfSidebar"></aside>
+        <div class="pf-content">
+          <div class="pf-tabs" id="pfTabBar"></div>
+          <div id="pfTabContent"></div>
         </div>
       </div>
-    </section>
-
-    <section class="tone-2">
-      <div class="wrap cat-block reveal" style="--accent-c:#E0512F; --accent-soft:#FDEDE0; border-bottom:none;">
-        <div class="cat-head"><div class="cat-icon" style="background:#FDEDE0;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 19V9l8-5 8 5v10" stroke="#FF6B4A" stroke-width="2"/></svg></div><div><h3>Instructor-Led &amp; Hybrid Training</h3><p>ILT &amp; VILT decks · Facilitator guides · Participant workbooks</p></div></div>
-        <div class="slot-grid">
-          <div class="slot"><div class="plus">+</div><span>Add ILT Deck</span></div>
-          <div class="slot"><div class="plus">+</div><span>Add Facilitator Guide</span></div>
-          <div class="slot"><div class="plus">+</div><span>Add Participant Workbook</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="tone-3">
-      <div class="wrap cat-block reveal" style="--accent-c:#2D9C71; --accent-soft:#EAF8F0; border-bottom:none;">
-        <div class="cat-head"><div class="cat-icon" style="background:#EAF8F0;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="5" y="3" width="14" height="18" rx="2" stroke="#3FBF8F" stroke-width="2"/><path d="M9 8h6M9 12h6M9 16h3" stroke="#3FBF8F" stroke-width="2" stroke-linecap="round"/></svg></div><div><h3>Job Aids &amp; Performance Support</h3><p>Job aids · Cheat sheets · Quick-reference guides</p></div></div>
-        <div class="slot-grid">
-          <div class="slot"><div class="plus">+</div><span>Add Job Aid</span></div>
-          <div class="slot"><div class="plus">+</div><span>Add Cheat Sheet</span></div>
-          <div class="slot"><div class="plus">+</div><span>Add Quick-Reference Guide</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="tone-4">
-      <div class="wrap cat-block reveal" style="--accent-c:#3392C7; --accent-soft:#EAF6FC; border-bottom:none;">
-        <div class="cat-head"><div class="cat-icon" style="background:#EAF6FC;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="4" y="5" width="16" height="14" rx="2" stroke="#4FB3E8" stroke-width="2"/><path d="M8 9h8M8 13h5" stroke="#4FB3E8" stroke-width="2" stroke-linecap="round"/></svg></div><div><h3>Design &amp; Planning Documents</h3><p>High-Level Design (HLD) · Content mapping · Process workflows · Work instructions</p></div></div>
-        <div class="slot-grid">
-          <div class="slot"><div class="plus">+</div><span>Add HLD / Content Map</span></div>
-          <div class="slot"><div class="plus">+</div><span>Add Process Workflow</span></div>
-          <div class="slot"><div class="plus">+</div><span>Add Work Instruction Doc</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="tone-5">
-      <div class="wrap cat-block reveal" style="--accent-c:#8A6A12; --accent-soft:#FFF6E0; border-bottom:none;">
-        <div class="cat-head"><div class="cat-icon" style="background:#FFF4E0;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M9 18V6l9 6-9 6z" fill="#FFB648"/></svg></div><div><h3>Video &amp; Multimedia</h3><p>Video productions · AI voice / synthetic media samples</p></div></div>
-        <div class="slot-grid">
-          <div class="slot"><div class="plus">+</div><span>Add Video Sample</span></div>
-          <div class="slot"><div class="plus">+</div><span>Add AI Voice/Media Sample</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="wrap cat-block reveal" style="--accent-c:#D5455C; --accent-soft:#FDEDF0; border-bottom:none;">
-        <div class="cat-head"><div class="cat-icon" style="background:#FDEDF0;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="2" fill="#D5455C"/><circle cx="6" cy="12" r="2" fill="#D5455C"/><circle cx="18" cy="12" r="2" fill="#D5455C"/></svg></div><div><h3>Other</h3><p>Anything else worth showing that doesn't fit cleanly above</p></div></div>
-        <div class="slot-grid"><div class="slot"><div class="plus">+</div><span>Add Document</span></div></div>
-      </div>
-    </section>
-  </div>
-
-  <div class="subpage" id="sub-process">
-    <section style="padding-top:0;">
-      <div class="wrap">
-        <p class="placeholder-tag">Artifacts placeholders below</p>
-        <div class="process-toggle-row">
-          <button class="ptoggle on" data-track="elearning">eLearning Process</button>
-          <button class="ptoggle" data-track="hybrid">Hybrid / ILT Process</button>
-        </div>
-
-        <div class="ptrack active" id="ptrack-elearning">
-          <div class="ptimeline">
-            <div class="pstep reveal" style="--step-c:#6E48B8; --step-soft:#F6F2FB;"><div class="pstep-head"><span class="pstep-num">01</span><h4>Analysis</h4></div><p class="pstep-note" style="margin-top:-10px;">Identifying whether the gap is caused by missing skills or by environmental/process barriers — before deciding on a solution.</p><div class="pstep-doc"><span class="plus2">+</span> Add needs analysis document</div></div>
-            <div class="pstep reveal" style="--step-c:#E0512F; --step-soft:#FDEDE0;"><div class="pstep-head"><span class="pstep-num">02</span><h4>Design (HLD &amp; Content Outline)</h4></div><div class="pstep-doc"><span class="plus2">+</span> Add HLD / Content Outline</div></div>
-            <div class="pstep reveal" style="--step-c:#3392C7; --step-soft:#EAF6FC;"><div class="pstep-head"><span class="pstep-num">03</span><h4>Storyboarding</h4></div><div class="pstep-doc"><span class="plus2">+</span> Add storyboard sample</div></div>
-            <div class="pstep reveal" style="--step-c:#2D9C71; --step-soft:#EAF8F0;"><div class="pstep-head"><span class="pstep-num">04</span><h4>Development (Build)</h4></div><div class="pstep-doc"><span class="plus2">+</span> Add development sample / screenshots</div></div>
-            <div class="pstep reveal" style="--step-c:#D5455C; --step-soft:#FDEDF0;"><div class="pstep-head"><span class="pstep-num">05</span><h4>QA &amp; SME Review</h4></div><div class="pstep-doc"><span class="plus2">+</span> Add QA checklist / review log</div></div>
-            <div class="pstep reveal" style="--step-c:#4B2E83; --step-soft:#F6F2FB;"><div class="pstep-head"><span class="pstep-num">06</span><h4>LMS Deployment</h4></div><div class="pstep-doc"><span class="plus2">+</span> Add deployment notes</div></div>
-            <div class="pstep reveal" style="--step-c:#FF6B4A; --step-soft:#FDEDE0;"><div class="pstep-head"><span class="pstep-num">07</span><h4>Evaluation</h4></div><div class="pstep-doc"><span class="plus2">+</span> Add evaluation summary</div></div>
-          </div>
-        </div>
-
-        <div class="ptrack" id="ptrack-hybrid">
-          <div class="ptimeline">
-            <div class="pstep reveal" style="--step-c:#6E48B8; --step-soft:#F6F2FB;"><div class="pstep-head"><span class="pstep-num">01</span><h4>Analysis</h4></div><p class="pstep-note" style="margin-top:-10px;">Identifying whether the gap is caused by missing skills or by environmental/process barriers — before deciding on a solution.</p><div class="pstep-doc"><span class="plus2">+</span> Add needs analysis document</div></div>
-            <div class="pstep reveal" style="--step-c:#E0512F; --step-soft:#FDEDE0;"><div class="pstep-head"><span class="pstep-num">02</span><h4>Design (HLD &amp; Session Outline)</h4></div><div class="pstep-doc"><span class="plus2">+</span> Add HLD / session outline</div></div>
-            <div class="pstep reveal" style="--step-c:#3392C7; --step-soft:#EAF6FC;"><div class="pstep-head"><span class="pstep-num">03</span><h4>Facilitator Guide &amp; Materials Development</h4></div><div class="pstep-doc"><span class="plus2">+</span> Add facilitator guide / workbook</div></div>
-            <div class="pstep reveal" style="--step-c:#2D9C71; --step-soft:#EAF8F0;"><div class="pstep-head"><span class="pstep-num">04</span><h4>Train-the-Trainer / Pilot</h4></div><div class="pstep-doc"><span class="plus2">+</span> Add pilot feedback / TTT notes</div></div>
-            <div class="pstep reveal" style="--step-c:#D5455C; --step-soft:#FDEDF0;"><div class="pstep-head"><span class="pstep-num">05</span><h4>Delivery (Live / Virtual)</h4></div><div class="pstep-doc"><span class="plus2">+</span> Add delivery recording / session sample</div></div>
-            <div class="pstep reveal" style="--step-c:#FF6B4A; --step-soft:#FDEDE0;"><div class="pstep-head"><span class="pstep-num">06</span><h4>Evaluation</h4></div><div class="pstep-doc"><span class="plus2">+</span> Add evaluation summary</div></div>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
   </div>
 </div>
 
@@ -635,23 +692,537 @@
     pages.forEach(p => spy.observe(p));
   }
 
-  // portfolio sub-tabs
-  document.querySelectorAll('.subtab').forEach(st => {
-    st.addEventListener('click', () => {
-      document.querySelectorAll('.subtab').forEach(x => x.classList.remove('on'));
-      st.classList.add('on');
-      document.querySelectorAll('.subpage').forEach(sp => sp.classList.remove('active'));
-      document.getElementById('sub-' + st.dataset.sub).classList.add('active');
+  // ===================== PORTFOLIO: filters, cards, modal =====================
+  document.querySelectorAll('.pf-filter-row .subtab').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.pf-filter-row .subtab').forEach(b => b.classList.remove('on'));
+      btn.classList.add('on');
+      const f = btn.dataset.filter;
+      document.querySelectorAll('.pf-card').forEach(card => {
+        card.style.display = (f === 'all' || card.dataset.category.includes(f)) ? '' : 'none';
+      });
     });
   });
-  document.querySelectorAll('.ptoggle').forEach(pt => {
-    pt.addEventListener('click', () => {
-      document.querySelectorAll('.ptoggle').forEach(x => x.classList.remove('on'));
-      pt.classList.add('on');
-      document.querySelectorAll('.ptrack').forEach(tr => tr.classList.remove('active'));
-      document.getElementById('ptrack-' + pt.dataset.track).classList.add('active');
+
+  const pfProjects = {
+
+
+
+meridian: {
+  eyebrow: 'Performance Analysis · Instructional Design',
+  title: 'Medication Administration Performance Improvement',
+  role: 'Performance Consultant & Instructional Designer',
+  client: 'Healthcare Network (Meridian Health)',
+  year: '2024–25',
+  duration: '',
+  skills: ['Root Cause Analysis','Job Task Analysis','Cognitive Task Analysis','Needs Assessment','Front-End Analysis','Instructional Systems Design','Kirkpatrick / Phillips ROI'],
+  frameworks: ['Gilbert\u2019s BEM','Rummler-Brache','Fishbone (Ishikawa)','Five Whys','Kirkpatrick 4 Levels'],
+  tools: ['Articulate Rise 360','Storyline 360'],
+  overview: `<div class="overview-text">
+    <p class="disclosure">Meridian Health and Wellness Network is a modified name — I've worked with a similar healthcare organization professionally, and this case study is built from that inspiration. Meridian is a three-hospital, two-clinic system in metro Atlanta, staffed by roughly 520 registered nurses seeing about 1,100 patients daily.</p>
+    <div class="challenge-box">
+      <div class="ch-label">The Core Problem</div>
+      <p>An 11.2% medication administration error rate — more than five times the accepted benchmark of under 2%. In one quarter, Meridian's Quality and Patient Safety Department logged 61 verified errors: 48 near-misses caught before reaching a patient, 9 that reached a patient with minor consequence, and 4 requiring clinical intervention. Leadership's working theory was that nurses needed retraining. The investigation found something else.</p>
+    </div>
+    <p>Before recommending anything, I ran a full root-cause sequence: a non-punitive <strong>Five Whys</strong> session with the Quality and Patient Safety Director, the Clinical Education Manager, and four charge nurses; a six-category <strong>Fishbone analysis</strong> (People, Methods, Culture, Equipment, Environment, Management); and <strong>Gilbert's Behavior Engineering Model</strong> applied across all six factors, to separate what nurses didn't know from what the system made hard to do correctly.</p>
+    <p>The Five Whys chain traced five links deep: skipped verification → time pressure and an unfamiliar EHR interface → a new EHR deployed seven months earlier → a four-hour, vendor-run orientation with no medication-specific practice → no clinical education involvement during that rollout. That last link is the actual root cause — not a skills gap on its own, but the absence of any structured, workflow-specific training plan when the system changed underneath the nurses.</p>
+    <p>The <strong>Job and Cognitive Task Analysis</strong> added what Five Whys and Fishbone couldn't reach: a 10-task, DIF-rated inventory, and — for the five highest-judgment tasks — the tacit reasoning nurses actually rely on: recognizing an unusual dosage, prioritizing one EHR alert over another, and deciding, in the moment, whether to self-report a near-miss.</p>
+    <p>The <strong>Implementation Plan</strong> covers the 12-week rollout across 520 nursing staff at three facilities: a prioritized cohort (nurses under two years' tenure, or recent EHR-exposure, go first in Week 9), a 20-nurse Cohort 0 pilot in Weeks 7–8 with a dedicated focus group before full rollout, and a Kirkpatrick 4-level evaluation framework with a 277% projected ROI on a $33,360 program cost.</p>
+  </div>`,
+  phases: [
+    {key:'A', name:'Analysis', on:true, blurb:'Diagnosing whether the gap was a skills problem, a systems problem, or both — before proposing any solution.', artifacts:[
+      {icon:'📋', type:'doc', title:'Root Cause Analysis — Medication Administration Errors', file:'docs/analysis/Root Cause Analysis.pdf', desc:'Five Whys, a six-category Fishbone diagram, and Gilbert\u2019s BEM applied across all six performance factors — tracing the 11.2% error rate back to a training and performance-support gap left by an EHR rollout, not a nursing competency problem.'},
+      {icon:'📊', type:'doc', title:'Job Task & Cognitive Task Analysis — Registered Nurse, Medication Administration', file:'docs/analysis/Meridian Health and Wellness Network.pdf',desc:'A 10-task DIF-rated inventory plus a cognitive task analysis of the five highest-judgment tasks — surfacing the tacit decision-making (cue recognition, alert prioritization, time-pressure triage) that no existing SOP had ever documented.'}
+    ]},
+    {key:'D', name:'Design', on:false, note:'+ Design artifacts not added yet'},
+    {key:'D', name:'Development', on:false, note:'+ Development artifacts not added yet'},
+    {key:'I', name:'Implementation', on:true, blurb:'Turning a completed design into a 12-week, three-facility rollout.', artifacts:[
+      {icon:'⚙️', type:'doc', title:'Implementation Plan — Medication Administration Program', 'docs/imp_plan/Implementation Plan.pdf', desc:'The 12-week deployment plan: LMS/SCORM configuration, a prioritized rollout (nurses with under two years\u2019 tenure or recent EHR exposure go first), a 20-nurse Cohort 0 pilot with a dedicated focus group before full rollout, and facilitator preparation for all four simulation-lab leads.'}
+    ]},
+    {key:'E', name:'Evaluation', on:false, note:'+ Evaluation artifacts not added yet (Kirkpatrick/Phillips framework currently described inside the Implementation Plan above)'}
+  ],
+  caseStudy: [
+    {n:'01',t:'The Challenge',body:'Meridian Health and Wellness Network is a three-hospital, two-clinic system in metro Atlanta with roughly 520 RNs seeing 1,100 patients daily. In a single quarter, its Quality and Patient Safety Department recorded 61 verified medication administration errors: an 11.2% rate against an industry benchmark of under 2%. Forty-eight were near-misses; nine reached a patient with minor harm; four required clinical intervention. Leadership\u2019s working theory was that nurses needed retraining. A new EHR had gone live seven months earlier, and no one had revisited training to match it.'},
+    {n:'02',t:'The Approach',body:'I ran a full root-cause sequence before proposing anything. A non-punitive Five Whys session with the Quality and Patient Safety Director, the Clinical Education Manager, and four charge nurses traced the error chain five links back: skipped verification, under time pressure, on an unfamiliar EHR interface, from a four-hour vendor-run orientation, that the clinical education department was never consulted on. A six-category Fishbone analysis (People, Methods, Culture, Equipment, Environment, Management) and Gilbert\u2019s Behavior Engineering Model — applied across all six factors — confirmed the gap wasn\u2019t concentrated in one place: information, resources, incentives, skills, capacity, and motives all showed real, documented weaknesses. The Job and Cognitive Task Analysis added the layer neither of those tools could reach: a 10-task DIF-rated inventory, and for the five tasks carrying the heaviest clinical judgment, the tacit reasoning — cue recognition, alert prioritization, time-pressure triage — that the original onboarding had never addressed at all.', highlight:true},
+    {n:'03',t:'The Solution',body:'A blended intervention, not a training-only fix: three scenario-based eLearning modules and a two-hour EHR-simulation lab session targeting the skills gap; a weekly five-minute microlearning refresher for eight weeks; a laminated 5-Rights job aid at every medication station; and, in parallel, three non-training changes — a non-punitive anonymous reporting channel, an EHR alert-tiering review with IT and pharmacy, and scheduled maintenance for the two units with documented barcode-scanner failures. Three of the seven components require no training at all, which was the point: training alone would have addressed one causal factor out of six.'},
+    {n:'04',t:'The Impact',body:'The projected impact draws on outcomes I saw on a similar real engagement, sharpened using the ROI methodology I picked up in coursework afterward: a 55% reduction in the MAE rate within six months, and a 277% ROI on a $33,360 program cost. The more defensible outcome is the evaluation design itself: Level 3 measured through a structured 90-day follow-up survey and supervisor observation, Level 4 through the hospital\u2019s quarterly incident review, with a specific target of the MAE rate at or below 2% within 12 months.'},
+    {n:'05',t:'What I Learned',body:'My regular practice, until this project, was to work from an analysis someone else had already completed — as a designer, I’m usually handed a finished needs assessment, not asked to produce one. Building this Root Cause Analysis myself was the first time I had to run a Five Whys session and populate a full BEM factor table without a completed analysis to build from, and the gap it exposed was real: I understood the theory but had never had to defend a root cause to stakeholders who hadn’t reached the same conclusion yet. LT 7150 (Analysis of Performance & Instructional Systems) closed that gap — not just the framework, but the practice of running the session itself. I implemented that directly here: the five-links-deep Five Whys chain and the six-factor BEM table are both mine, not adapted from someone else’s completed work, and the Implementation Plan that follows (built with LT 7100) is the first rollout plan I’ve sequenced state-by-state myself rather than handed off once the design was done. I now sit in on my own team’s analysis conversations at work instead of waiting for the handoff.'}
+  ]
+},
+
+northfield: {
+  eyebrow: 'Full Performance Consulting Engagement',
+  title: 'Wafer Cleaning & PM/PLM Training — Performance Consulting',
+  role: 'Performance Consultant',
+  client: 'Semiconductor Manufacturer (Fictional — Northfield Semiconductor)',
+  context: 'Two concurrent workstreams, one engagement',
+  year: '2024–25',
+  duration: 'Wafer cleaning: full analysis → evaluation. PM/PLM: front-end analysis stage.',
+  skills: ['Organisational & Needs Analysis','Root Cause Analysis','Job & Cognitive Task Analysis','Front-End Analysis','Cost-Benefit Analysis'],
+  frameworks: ['Work-Worker-World','Gilbert\u2019s BEM','Rummler-Brache','Harless\u2019s FEA','Mager & Pipe','Van Tiem HPT'],
+  overview: `<div class="overview-text">
+    <p class="disclosure">Northfield Semiconductor is a modified name — I've consulted for a similar semiconductor equipment manufacturer, and this case study is built from that engagement. This was one broader consulting engagement covering two concurrent gaps in different parts of the same organization.</p>
+    <div class="challenge-box">
+      <div class="ch-label">Two Gaps, One Engagement</div>
+      <p>On the shop floor: an estimated $124,000 in annual inefficiency across wafer cleaning operations — recipe selection, alarm handling, inspection, and documentation. In Engineering Services: program managers navigating a transition from iTLM to Wecenter (the company's new PLM system), with training that hadn't kept pace, creating delays and compliance risk in the engineering change process. Leadership treated both as training problems. Neither analysis started from that assumption.</p>
+    </div>
+    <p>The <strong>wafer cleaning workstream</strong> ran the full HPT sequence: the Work-Worker-World framework as an initial diagnostic lens, organizational analysis, structured needs assessment, and a root cause analysis combining <strong>Gilbert's Behavior Engineering Model</strong> with a <strong>Rummler-Brache</strong> process map and a Fishbone workshop with supervisors and QA leads. The job and cognitive task analysis identified recipe selection, alarm handling, and inspection as the three highest-priority tasks by DIF rating, and surfaced tacit knowledge — alarm-triage heuristics, cue recognition — that no existing SOP had documented.</p>
+    <p>Three intervention options were compared using <strong>Phillips ROI</strong> methodology: training-only ($142,400), system-redesign-only ($180,000), and a blended approach ($289,400 Year 1, 11% ROI, payback in Year 2). The blended option — simulation training, SOP simplification, MES alert-clarity fixes, job aids, and supervisor coaching — was recommended, with conservative and stretch scenarios included to keep the financial case honest.</p>
+    <p>The <strong>PM/PLM workstream</strong> got a deliberately different treatment. Rather than jump to a training refresh — the client's original request — I built a front-end analysis plan first: <strong>Harless's 13 Smart Questions</strong> to frame stakeholder interviews across US and India sites, <strong>Gilbert's BEM</strong> and the <strong>Mager & Pipe flowchart</strong> to test whether the gap was training-shaped or systemic, and <strong>Rummler-Brache</strong> and <strong>Van Tiem's HPT framework</strong> to map where in the engineering-change workflow performance actually broke down. This workstream is presented at that planning stage — solution-neutral, evidence-gathering, not yet resolved into a recommendation.</p>
+  </div>`,
+  phases: [
+    {key:'A', name:'Analysis', on:true, blurb:'Two workstreams, two different depths — one fully diagnosed through to a recommendation, one deliberately held at the planning stage until the data says more.', artifacts:[
+      {icon:'📋', type:'doc', workstream:'Workstream · Wafer Cleaning Operators', title:'Client Performance Consulting Report', desc:'The full HPT report: organizational and needs analysis, root cause analysis (BEM + Rummler-Brache + Fishbone), job and cognitive task analysis with DIF ratings, a three-option cost-benefit comparison, and a Kirkpatrick/Phillips evaluation plan — diagnosis through recommendation in one document.'},
+      {icon:'📊', type:'doc', workstream:'Workstream · Program Manager / PLM Transition', title:'Front-End Analysis Plan', desc:'A solution-neutral diagnostic plan — Harless\u2019s 13 Smart Questions, Gilbert\u2019s BEM, Rummler-Brache, Van Tiem\u2019s HPT framework, and the Mager & Pipe flowchart — built to test whether refreshing PM training was actually the right fix before committing to it.'}
+    ]},
+    {key:'D', name:'Design', on:false, note:'+ Design artifacts not added yet'},
+    {key:'D', name:'Development', on:false, note:'+ Development artifacts not added yet'},
+    {key:'I', name:'Implementation', on:false, note:'+ Implementation artifacts not added yet'},
+    {key:'E', name:'Evaluation', on:false, note:'+ Evaluation artifacts not added yet (Kirkpatrick/Phillips plan currently lives inside the Client Report above)'}
+  ],
+  caseStudy: [
+    {n:'01',t:'The Challenge',body:'Northfield Semiconductor is a semiconductor equipment manufacturer where I was the retained performance consultant, tracking two concurrent gaps under one engagement. On the manufacturing floor, wafer cleaning operators were driving an estimated $124,000 in annual inefficiency across recipe selection, alarm handling, inspection, and documentation. In Engineering Services, program managers navigating a transition from iTLM to Wecenter, the company\u2019s new PLM system, were falling behind on engineering change requests, with training content that had not been updated to match the new workflow. Leadership\u2019s instinct, in both cases, was to commission new training. Neither instinct was tested before I arrived.'},
+    {n:'02',t:'The Approach',body:'For wafer cleaning, I ran the full HPT sequence: the Work-Worker-World framework as an initial diagnostic lens, then organizational analysis, structured needs assessment, and a root cause analysis combining Gilbert\u2019s BEM with Rummler-Brache process mapping. The job and cognitive task analysis rated recipe selection, alarm handling, and inspection as the three highest-priority tasks, and surfaced tacit judgment — alarm-triage heuristics, cue recognition — that existing SOPs never captured. For the PM/PLM workstream, I deliberately stopped short of a full analysis and built a front-end analysis plan instead: Harless\u2019s 13 Smart Questions to structure stakeholder interviews, Gilbert\u2019s BEM and the Mager and Pipe flowchart to test whether the gap was training-shaped at all, and Rummler-Brache and Van Tiem\u2019s HPT framework to map where in the workflow the breakdown actually occurred. That restraint was itself a design decision — committing to a training solution for a system-transition problem, before confirming the cause, is exactly the mistake the wafer cleaning workstream had already shown me not to make.', highlight:true},
+    {n:'03',t:'The Solution',body:'For wafer cleaning, a blended intervention addressing each BEM factor: simulation-based training for procedural fluency, SOP simplification with layered visual references, MES alert-clarity improvements, workstation job aids, and a structured supervisor coaching program — modeled with a Phillips ROI cost-benefit comparison across training-only, system-redesign-only, and blended options, landing on an 11% Year-1 ROI with payback in Year 2. For the PM/PLM workstream, no solution is proposed yet, deliberately: the front-end analysis plan is the deliverable at this stage, and recommending a fix before Phase 2 data collection would have repeated the client\u2019s original, untested assumption.'},
+    {n:'04',t:'The Impact',body:'Wafer cleaning\u2019s projected outcomes: $20,700 recovered from reduced recipe-selection errors, $25,300 from decreased alarm-related downtime, $16,400 from fewer QA flags, at full scale across four production lines — measured going forward through MES system log data rather than self-report. The PM/PLM workstream\u2019s impact, at this stage, is scoping accuracy: knowing what to measure — ECO cycle times, escalation frequency, role-clarity survey results — before any training is built, rather than funding a fix aimed at the wrong cause.'},
+    {n:'05',t:'What I Learned',body:'My regular practice, professionally, put me on the design and development side of nearly every project — by the time work reached me, the analysis was already finished, and ‘slow down and question the request’ was an instinct I had, not a method I could defend to a client. The gap became obvious running these two workstreams side by side: wafer cleaning got a full analysis because the client already trusted the process; the PM/PLM request almost didn’t, because pushing back on a client who has already decided they want training takes more than instinct. LT 7150 (Analysis of Performance & Instructional Systems) gave me the actual method — how to run a Five Whys without it turning punitive, how to read a BEM factor table, how to recognize when an analysis is genuinely finished rather than merely stopped. I implemented that directly in the front-end analysis plan for the PM/PLM workstream: Harless’s 13 Smart Questions and the Mager & Pipe flowchart are the specific tools that let me hold off on a training recommendation and defend that restraint to a client, not just feel that it was warranted. I now sit in on my own team’s analysis discussions at work instead of waiting for a finished brief.'}
+  ]
+},
+
+cyberhygiene: {
+  eyebrow: 'eLearning Design · Formative Evaluation',
+  title: 'Cyber Hygiene for Healthcare — eLearning Module',
+  role: 'Instructional Designer — Learner Analysis, Task Analysis, Instructional Strategy, Evaluation Lead',
+  client: 'Healthcare Organisation — Academic Team Project',
+  context: 'Clinical and administrative hospital staff',
+  year: '2024–25',
+  duration: 'Full design, development, and evaluation cycle',
+  skills: ['Learner Persona Development','Cognitive Task Analysis','Instructional Design Document','Formative Evaluation Design','Bloom\u2019s Taxonomy Alignment'],
+  frameworks: ['ADDIE','Kirkpatrick 1–4','Mayer\u2019s Multimedia Principles'],
+  tools: ['Articulate Rise 360','Articulate Storyline 360'],
+  overview: `<div class="overview-text">
+    <div class="group-badge"><span>👥</span> Team Collaboration — Vimala Seeram, Hailey Colbrunn, Chuka Nwaneli</div>
+    <div class="challenge-box">
+      <div class="ch-label">The Core Problem</div>
+      <p>79% of healthcare data breaches are caused by hacking or IT incidents — most often phishing (U.S. Dept. of Health & Human Services, Office for Civil Rights, 2024). Hospital staff know what a suspicious email looks like. What they lack is the behavioural fluency to act on that knowledge in the same seconds as three patient care decisions.</p>
+    </div>
+    <p>This project required designing for three genuinely different learner profiles sharing the same module — and the IDD\u2019s persona table didn\u2019t just describe them, it mapped each trait straight to a <strong>design implication</strong>. Maria\u2019s tech comfort and high motivation meant branching, scenario-based decision points; James\u2019s tech anxiety and fear of being judged meant step-by-step scaffolding, printable checklists, and explicit permission to make mistakes; Aisha\u2019s confidence and appetite for autonomy meant optional deep-dives and a peer-leadership framing. A single instructional approach would have satisfied, at most, one of them.</p>
+    <p>My individual contributions included the complete <strong>task analysis</strong> — mapping all four performance tasks to their underlying cognitive processes (discrimination vs. procedural execution vs. attitudinal shift) — and the full <strong>instructional strategies</strong> section of the IDD. The course itself: a 30-minute asynchronous module on the hospital\u2019s secure network, with closed captions, zoom functionality, and high-contrast visual options designed in from the start rather than retrofitted afterward.</p>
+    <p>The <strong>formative evaluation plan</strong> ran four phases — Expert Review, One-to-One Testing, Small Group Pilot, and Technical Testing — refining the module against all three personas rather than a single generic pilot group, before it was considered ready for full release.</p>
+  </div>`,
+  phases: [
+    {key:'A', name:'Analysis', on:false, note:'+ Analysis artifacts not added yet'},
+    {key:'D', name:'Design', on:true, blurb:'Three personas, one module — a design-implication column that turned description into decisions.', artifacts:[
+      {icon:'📋', type:'doc', title:'Instructional Design Document — Cyber Hygiene for Healthcare', desc:'The full IDD: a goal statement grounded in the HHS Office for Civil Rights\u2019 79% breach-cause statistic, a three-persona learner analysis where each trait maps to a specific design implication rather than just a description, a performance-context analysis, and a task analysis separating recognition from reporting as two distinct cognitive demands.'}
+    ]},
+    {key:'D', name:'Development', on:true, blurb:'The storyboard content translated into an actual build, narration script and all.', artifacts:[
+      {icon:'🖥️', type:'ppt', title:'eLearning Prototype (Alpha)', desc:'A 29-slide visual and interaction build: scenario-based inbox simulation, drag-and-drop phishing-indicator sorting, reporting workflow walkthrough, and peer-accountability debrief — with the complete narration script included in the speaker notes on 26 of 29 slides, the actual voiceover text carried into the final Storyline build.'}
+    ]},
+    {key:'I', name:'Implementation', on:false, note:'+ Implementation artifacts not added yet'},
+    {key:'E', name:'Evaluation', on:true, blurb:'Refining the module against all three personas before calling it ready.', artifacts:[
+      {icon:'📊', type:'doc', title:'Formative Evaluation Plan — Cyber Hygiene for Healthcare', desc:'A 4-phase formative evaluation methodology (Expert Review, One-to-One Testing, Small Group Pilot, Technical Testing) built to refine the module before full release — evaluation questions framework, observation checklist, and focus group protocol, run against the three learner personas rather than a generic pilot group.'}
+    ]}
+  ],
+  caseStudy: [
+    {n:'01',t:'The Challenge',body:'Hospital staff are one of the most targeted groups for phishing attacks globally. The design challenge was not simply teaching recognition — what a phishing email looks like. The harder challenge was behavioural and contextual: these are professionals working in fast-paced, high-cognitive-load environments, receiving suspicious messages in the same moments as clinical decisions. The deeper barrier to reporting was not ignorance of the process — it was psychological safety. A training solution that addressed recognition without addressing the reporting culture would solve half the problem at best.'},
+    {n:'02',t:'The Approach',body:'The three-persona learner analysis wasn\u2019t just descriptive — each trait fed a specific design implication. Maria\u2019s tech comfort and high motivation meant she could go straight into branching, scenario-based decision points; James\u2019s tech anxiety and fear of being judged meant he needed step-by-step scaffolding, printable checklists, and — critically — explicit permission to make mistakes without consequence; Aisha\u2019s confidence and appetite for autonomy meant optional deep-dives and a peer-leadership framing would hold her attention where a linear walkthrough would lose it. The task analysis mapped each of the four performance tasks to its underlying cognitive process — recognition is a discrimination task, reporting is primarily attitudinal — which is what justified designing two different instructional approaches for what looked, on the surface, like one skill.', highlight:true},
+    {n:'03',t:'The Solution',body:'A 30-minute asynchronous eLearning module delivered on the hospital\u2019s secure internal network. Five components: an animated introduction grounding content in breach statistics, scenario-based branching activities for recognition and decision-making, interactive checklists for secure communication procedures, a simulated reporting workflow, and peer accountability reflection prompts with a downloadable self-monitoring checklist. The reporting module deliberately separated the procedural from the psychological — teaching the process first, then normalising reporting through peer scenario modeling.'},
+    {n:'04',t:'The Impact',body:'Formative evaluation with Cohort 0 — modeled on results from a similar evaluation I ran — produced: 4.7/5.0 content accuracy rating, 38% average knowledge gain across pre/post assessment items, 82% self-reported confidence in applying the reporting protocol, and 88% indicating the downloadable checklist would be used on the job. The highest-priority revision item was branching scenario navigation, flagged for simplification before full release.'},
+    {n:'05',t:'What I Learned',body:'Design and development are where my regular practice has always been strongest — building the module itself, the personas, the branching logic. Evaluation was the gap: I could describe a Kirkpatrick model accurately in a meeting, but I had never actually built and run one, and it showed in earlier group work where ‘evaluation’ meant a single completion-rate metric. This course is where that changed — building this module’s four-phase Formative Evaluation Plan required me to design instrumentation, not just cite the theory behind it, and it connected back to coursework I’d previously treated as separate from my design work. I implemented it here specifically in the reporting-module evaluation: running the plan against all three personas separately, rather than one generic pilot group, because a persona-blind pilot would have missed exactly the psychological-safety gap the reporting module was built to address. I’ve since brought this up with colleagues who’ve been running evaluations for years, comparing notes on instrumentation rather than just discussing findings.'}
+  ]
+},
+
+beattheclock: {
+  eyebrow: 'Gamification Design · Project Management',
+  title: 'Beat the Clock: A Time Management Quest',
+  role: 'Project Manager',
+  context: 'Time management skills for learners and early-career professionals',
+  year: '2025',
+  duration: 'Full ADDIE project plan + gamification design',
+  skills: ['Work Breakdown Structure','Resource Estimation','ADDIE Project Planning','Gamification Design','Self-Determination Theory'],
+  frameworks: ['Work Breakdown Structure (3-Level Decomposition)','Parametric &amp; Rough-Order Estimation','Self-Determination Theory (Gamification)'],
+  tools: ['Articulate Storyline 360'],
+  overview: `<div class="overview-text">
+    <div class="group-badge"><span>👥</span> Team Collaboration — Vimala Seeram, Raquel Madrid, Sharon Bailey, Azahni Streeter</div>
+    <div class="challenge-box">
+      <div class="ch-label">The Core Problem</div>
+      <p>Time management is notoriously resistant to conventional training: most learners already know the principles. The gap is application under pressure. A gamified simulation provides a low-stakes environment where the consequences of poor prioritisation are immediate and instructive.</p>
+    </div>
+    <p>My primary contribution was the <strong>Work Breakdown Structure</strong>: a six-phase decomposition (Project Initiation, Analyze, Design, Develop, Implementation, Evaluation), each broken into activities and then individual work packages, with explicit SME sign-off gates after Analysis and again after Design — not just a final review at the end. That structure is what let a four-person team build one course instead of four slightly different ones.</p>
+    <p>The <strong>Design</strong> phase alone breaks into a design document, a dedicated storyboard-and-script sub-phase (with its own script review and revision cycle), visual asset creation, and a final SME-reviewed sign-off. <strong>Development</strong> runs an alpha build in Storyline, a beta revision cycle, a separate stakeholder beta review, real pilot testing, and a formal QA pass before anything ships. <strong>Implementation</strong> covers production deployment, learner onboarding materials, a launch communication plan, and technical support preparation — and <strong>Evaluation</strong> closes the loop with assessment data collection and a published evaluation report.</p>
+    <p>The <strong>Resource Estimate</strong> translates that plan into role-by-role effort — human resources, days, and hours per work package — and the <strong>Schedule &amp; Cost Estimation</strong> turns it into a 102-day timeline (October 2025 – February 2026) totaling $21,046, broken down by phase: $2,541 for Project Management, $3,016 for Analysis, $6,540 for Design, $6,074 for Development, $1,906 for Implementation, $969 for Evaluation. The 25-minute finished module's 497-hour development estimate is checked against the industry-standard 300:1 development ratio (a 126-hour baseline), with the difference explained rather than hidden: custom visual design, three review rounds, and accessibility compliance.</p>
+    <p>The <strong>Project Communication Plan</strong> is what keeps a five-role team plus external vendors from working at cross purposes: a full stakeholder matrix mapping audience to channel, frequency, owner, and escalation path — the Project Sponsor gets a monthly report, SMEs get weekly review touchpoints, the Technical Lead gets daily stand-ups during the development sprint, each with a defined escalation path back to the Project Manager.</p>
+  </div>`,
+  phases: [
+    {key:'PM', name:'Project Planning', on:true, blurb:'The full project-management package: WBS, resource estimate, schedule and cost model, and communication plan.', artifacts:[
+      {icon:'🗂️', type:'doc', title:'Work Breakdown Structure (WBS)', desc:'A 3-level decomposition across all six phases — Project Initiation, Analyze, Design, Develop, Implementation, Evaluation — each work package with a specific completion criterion, an owner, and explicit SME sign-off gates after Analysis and after Design. Approved by all team members.'},
+      {icon:'📊', type:'doc', title:'Resource Estimate', desc:'Role-by-role effort estimates across every work package, benchmarked rather than guessed: the finished module is estimated at 25 minutes of learner time, and our 497-hour development estimate is checked directly against the industry-standard 300:1 development ratio (a 126-hour baseline), with the gap explained by custom visual design, multi-round review, and accessibility compliance.'},
+      {icon:'📅', type:'xlsx', title:'Project Schedule & Cost Estimation', desc:'A 102-day schedule (Oct 2025 – Feb 2026) with task-level start/finish dates, blended hourly rates by role, and a phase-by-phase cost breakdown — Project Management, Analysis, Design, Development, Implementation, Evaluation — totaling $21,046.'},
+      {icon:'💬', type:'doc', title:'Project Communication Plan', desc:'A full stakeholder communication matrix: audience, content, channel, frequency, owner, and escalation path for every role from Project Sponsor down to end learners — the document that decides why a sponsor gets a monthly report while a technical lead gets daily stand-ups during the development sprint.'}
+    ]}
+  ],
+  caseStudy: [
+    {n:'01',t:'The Challenge',body:'Time management is one of the most commonly assigned training topics — and one of the least effective, because most learners already know the principles (prioritize, block time, avoid multitasking) and still don\u2019t apply them under real pressure. Our team\u2019s design challenge for this course assignment was building an experience that targets the application gap specifically, not the knowledge gap, and doing it as a genuinely gamified module rather than dressed-up compliance training. My role on the four-person team was project management: turning the team\u2019s design ideas into an executable Work Breakdown Structure and resourcing plan that the rest of the team could actually build against.'},
+    {n:'02',t:'The Approach',body:'The WBS I built decomposes the project across six phases, each broken into activities and then individually ownable work packages: Project Initiation (requirements review, kickoff), Analysis (learner, context, and task analysis with a formal SME sign-off gate), Design (a design document, then a dedicated storyboard-and-script sub-phase with its own script review and revision cycle, then visual asset creation, then a final SME-reviewed sign-off), Development (an alpha build in Storyline, a beta revision cycle, a separate stakeholder beta review, pilot testing with real users, and a formal QA pass before anything ships), Implementation (production deployment, learner onboarding materials, a launch communication plan, and technical support and FAQ preparation), and Evaluation (assessment data collection and a published evaluation report). Building in an explicit sign-off gate after Analysis and again after Design — not just at the end — was the specific structural decision that kept four people building the same course instead of four people building four slightly different courses.', highlight:true},
+    {n:'03',t:'The Solution',body:'A gamified eLearning module in Articulate Storyline 360: time-pressured, scenario-based decision trees, a point-and-badge system rewarding efficient task sequencing over simply correct answers, avatar-based characters navigating realistic time-management dilemmas, and a post-completion debrief that helps learners identify their own specific vulnerability pattern rather than a generic scorecard. The deliverables also included the complete WBS and resource estimate — the full project-management discipline behind building it, not just the design behind what it teaches.'},
+    {n:'04',t:'The Impact',body:'As a course project, Beat the Clock produced planning and design artifacts rather than a deployed, measured product. The WBS demonstrates the ability to decompose a multi-phase instructional project into specific, ownable work packages with real sign-off gates; the resource estimate demonstrates the ability to translate that plan into an effort model a project sponsor could actually use to make a go or no-go resourcing decision. Both are competencies that transfer to any instructional design project run at scale.'},
+    {n:'05',t:'What I Learned',body:'My regular practice at work puts me in the room for client and PM communication routinely, but until this course, I was in it without understanding the structure underneath it — I couldn’t have told you why a sponsor gets a monthly report while a technical lead gets daily check-ins, only that it seemed to work. LT 8150 (Project Management for Instructional Designers) is what made that structure visible and teachable, not just observable. I implemented it directly in this project’s Communication Plan: deliberately matching audience to channel and cadence — the sponsor by monthly report, SMEs weekly during review, the technical lead with daily stand-ups during the development sprint — each with its own escalation path, rather than defaulting to one status-update format for everyone. The cost model taught me the other half of the same gap: benchmarking our 497-hour development estimate against the industry-standard 300:1 ratio for a 25-minute course, instead of presenting a number with no defensible basis. After the course, conversations with our actual project manager at work stopped being just status updates — I now ask about escalation paths, resourcing assumptions, and how estimates get defended to a sponsor.'}
+  ]
+},
+
+climatefinance: {
+  eyebrow: 'Blended Learning Design',
+  title: 'Climate Finance for Indian Cities (CF-101)',
+  role: 'Senior Instructional Designer',
+  client: 'Nirmaan ClimateWorks Foundation + GIZ India (Fictional)',
+  context: 'Urban Local Body Finance Officials — 5 Indian states, 40 cities',
+  year: '2025',
+  duration: '40-hour blended program design, 12-month rollout plan',
+  skills: ['Needs Assessment','Content Analysis (Gagné)','Instructional Design Document','Multilingual Design','Implementation Planning'],
+  frameworks: ['Gagné\u2019s Learning Outcomes','Kirkpatrick 1–4'],
+  tools: ['Articulate Rise 360','Storyline 360','NULP Platform'],
+  overview: `<div class="overview-text">
+    <p class="disclosure">Nirmaan ClimateWorks Foundation is a modified name — I've done similar applied-training work with municipal and public-sector finance clients, and this case study is built from that experience. The needs-assessment data and design reasoning below reflect that real work.</p>
+    <div class="challenge-box">
+      <div class="ch-label">The Core Problem</div>
+      <p>72% of the 85 finance officers NCF surveyed across 40 Urban Local Bodies in five states couldn't explain how a city accesses Green Climate Fund financing directly. Only 18% had read the SEBI Green Bond Circular that governs municipal green bonds. 61% didn't know carbon credits could fund urban projects at all. Self-rated climate finance competency: 1.9 out of 5. Yet 97% didn't want another seminar — they wanted a program that ended in a proposal they could actually submit.</p>
+    </div>
+    <p>The <strong>Content Analysis</strong> classified every piece of CF-101's content by <strong>Gagné's four learning-outcome types</strong> — fact, concept, procedure, principle — before a single module was built. That classification is what let four very different task types (recognizing an instrument, applying a checklist, evaluating MDB eligibility, producing a concept note) each get the instructional strategy suited to it: illustrated glossary cards for facts, decision-tree activities for principles, guided step-by-step templates for procedures.</p>
+    <p>The <strong>Design Document</strong> translated that into four Bloom-mapped objectives — from L2 classification up to L6 Create, the concept note itself — and a 40-hour blended architecture: 20 hours of Rise 360 concept instruction, a 2-hour Storyline simulation, 5 hours of live workshops, and an 8-hour mentored practicum. Making that practicum mandatory, not optional, was the decision that shaped everything downstream, so the capstone produces a real deliverable instead of ending, like every prior program these officers had attended, in a certificate.</p>
+    <p>The <strong>Table of Contents</strong> is what kept that architecture honest: 24-plus content items across six modules, each with its own duration, format, objective, and Bloom's level — including the Nashik Municipal Corporation green-bond simulation and the Bhubaneswar ADB case that anchor Modules 2 and 3 in real Indian city examples rather than generic scenarios.</p>
+    <p>The <strong>Implementation Plan</strong> coordinates the 12-month, 5-state rollout across three systems that don't naturally move at the same speed: NCF's delivery team, the National Urban Learning Platform's technical rollout, and state Urban Development Department sign-off — sequenced state by state from Maharashtra to Odisha, with a 40-mentor network onboarded ahead of the first cohort.</p>
+  </div>`,
+  phases: [
+    {key:'A', name:'Analysis', on:false, note:'+ Analysis artifacts not added yet'},
+    {key:'D', name:'Design', on:true, blurb:'Turning a needs assessment into a four-objective, Bloom-mapped, 40-hour blended architecture.', artifacts:[
+      {icon:'📋', type:'doc', title:'Design Document — CF-101', desc:'The full instructional blueprint: target-audience analysis grounded in NCF\u2019s own 85-officer needs assessment, four Bloom-mapped objectives up to L6 Create, and the 40-hour blended architecture across Rise 360, Storyline 360, live workshops, and a mentored practicum.'},
+      {icon:'🗂️', type:'doc', title:'Content Analysis — CF-101', desc:'Every piece of content classified by Gagné\u2019s four learning-outcome types and mapped to its task, source material, and required strategy — the document that decided why Module 2 gets a simulation and Module 1 gets a mapping activity, not the reverse.'},
+      {icon:'📊', type:'xlsx', title:'Table of Contents — CF-101', desc:'The full 40-hour build sheet: 24+ items across six modules, each with duration, delivery format, objective, and Bloom\u2019s level — the working document that kept the course\u2019s scope honest against its own design document.'}
+    ]},
+    {key:'D', name:'Development', on:false, note:'+ Development artifacts not added yet'},
+    {key:'I', name:'Implementation', on:true, blurb:'Coordinating a 12-month, 5-state rollout across three systems that don\u2019t move at the same speed.', artifacts:[
+      {icon:'⚙️', type:'doc', title:'Implementation Plan — CF-101', desc:'The 12-month, 5-state rollout plan coordinating NCF\u2019s delivery team, the National Urban Learning Platform\u2019s technical rollout, and state Urban Development Department sign-off — sequenced across Maharashtra, Tamil Nadu, Karnataka, Rajasthan, and Odisha, with a 40-mentor network onboarded ahead of the first cohort.'}
+    ]},
+    {key:'E', name:'Evaluation', on:false, note:'+ Evaluation artifacts not added yet'}
+  ],
+  caseStudy: [
+    {n:'01',t:'The Challenge',body:'Nirmaan ClimateWorks Foundation is a development-finance NGO building climate finance skills for municipal finance officials across Indian Tier 2 and Tier 3 cities, and its own needs assessment — 85 officers across 40 Urban Local Bodies in five states — found the real scope of the problem: these were experienced, motivated government finance professionals lacking not willingness but translation, a way to connect deep expertise in government accounting to the vocabulary and conventions of international climate finance instruments. Self-rated competency going in: 1.9 out of 5.'},
+    {n:'02',t:'The Approach',body:'The Content Analysis classified every piece of CF-101\u2019s content by Gagné\u2019s four learning-outcome types — fact, concept, procedure, principle — before a single module was built, which is what let four very different task types (recognizing an instrument, applying a checklist, evaluating MDB eligibility, producing a concept note) each get the instructional strategy suited to it rather than one strategy applied everywhere. The learner and task analysis translated into four Bloom-mapped objectives, from L2 classification up to L6 Create — the concept note itself. The single decision that shaped everything downstream: making Module 6\u2019s mentored practicum mandatory rather than optional, so the 8-hour capstone produces a real deliverable — a draft Concept Note for the participant\u2019s own city — instead of ending, like every prior program these officers had attended, in a certificate.', highlight:true},
+    {n:'03',t:'The Solution',body:'A 40-hour blended architecture across six modules, sequenced by content type: Climate Finance Landscape and instrument classification (6 hrs), Municipal Green Bonds under the SEBI 2023 framework — including a Nashik Municipal Corporation bond-structuring simulation (8 hrs), MDB Instruments across ADB, World Bank, AIIB, and GCF direct access (6 hrs), Blended Finance design, Carbon Finance under India\u2019s CCTS, and the Mentored Concept Note Practicum. Delivered on the National Urban Learning Platform with offline download and bilingual Hindi/Marathi/Tamil support, since 12-hour rotating shifts and no extended classroom time meant every module had to fit inside a 30–45 minute self-directed segment.'},
+    {n:'04',t:'The Impact',body:'These targets reflect outcomes from a similar real programme, sharpened using the evaluation frameworks I learned in coursework afterward: at least 65% completion, a 35-point pre/post knowledge gain against that 1.9/5.0 baseline, 60% transfer at six months, and — at Level 4 — eight additional ULBs submitting a formal proposal within 18 months, tracked through the GIZ CFC programme\u2019s own results framework.'},
+    {n:'05',t:'What I Learned',body:'Design has always been comfortable territory in my regular practice — needs analysis into objectives into a module map is familiar work. What I’d never had to do before this project was plan the rollout myself: on prior projects, once the design document shipped, someone else sequenced the deployment. The twelve-month, five-state Implementation Plan here exposed that gap directly — coordinating three systems that don’t move at the same speed is a different skill than designing the course itself. LT 7100 and LT 7150 together are what made building this Implementation Plan possible, not just theoretically understandable. I implemented that by sequencing the rollout state-by-state, starting with Maharashtra and Tamil Nadu where NULP infrastructure was already in place, rather than launching all five states simultaneously and hoping infrastructure caught up. I would still invest more in pre-launch community building next time — a gap in this specific rollout, not in the general approach.'}
+  ]
+},
+
+professional: {
+  eyebrow: 'Professional Work Samples · 2016–2024',
+  title: 'Selected Professional Engagements',
+  role: 'Senior Instructional Designer / Learning Designer',
+  client: 'Seven engagements, fictionalized to protect confidentiality',
+  context: 'Financial services · Clinical research · Consumer goods · Healthcare · Manufacturing safety · Consulting',
+  year: '2016–2024',
+  duration: 'Fifteen years of professional practice',
+  skills: ['eLearning Development','Storyboarding','Workshop Facilitation Design','Stakeholder Review Cycles','Compliance & Safety Training'],
+  frameworks: ['Gagné\u2019s Nine Events','Merrill\u2019s First Principles','Keller\u2019s ARCS Model','Norman\u2019s Interaction Design Principles','SAM (Successive Approximation Model)','Malone\u2019s Intrinsic Motivation Theory','Argyris\u2019s Double-Loop Learning'],
+  tools: ['Articulate Storyline','PowerPoint (screen capture archive)'],
+  overview: `<div class="overview-text">
+    <p class="disclosure">Company names, logos, and some on-screen text have been fictionalized across these seven samples to protect confidentiality — durations, and a few contextual details are invented where the real specifics can't be shown. The instructional strategy, theoretical grounding, and design decisions behind each one are real.</p>
+    <p>Seven real, delivered engagements across healthcare, clinical research, consumer goods, manufacturing safety, financial services, and cross-cultural facilitation — each one deliberately built on a different instructional theory, so the Project Story tab reads as seven short case studies rather than one blended narrative.</p>
+  </div>`,
+  phases: [
+    {key:'D', name:'Design', on:true, blurb:'The blueprints — written before anything was built.', artifacts:[
+      {icon:'🗺️', type:'ppt', title:'Induction Storyboard — ABC Gaming Arcade', desc:'A 12-screen blueprint for one 30-minute module inside a larger, roughly three-hour new-hire induction program — narration script, visual descriptions, interaction specs, and branching logic, built around Malone\u2019s theory of intrinsic motivation before any development began.', level:'New-hire induction', engagement:'Gaming/entertainment client', format:'Storyboard (pre-Development blueprint)'},
+      {icon:'👥', type:'ppt', title:'Facilitator Guide — Lessons in Hindsight', desc:'A 75-minute retrospective workshop for distributed, multicultural teams at Larkspur Consulting Group — built around Argyris\u2019s double-loop learning, with in-person and virtual variants and defined facilitator/timekeeper/scribe roles.', level:'Team leads/managers, up to 20 attendees', engagement:'Larkspur Consulting Group', format:'Instructor-led facilitation guide (not eLearning)'}
+    ]},
+    {key:'D', name:'Development', on:true, blurb:'The actual builds — screen-by-screen, captured from the finished product.', artifacts:[
+      {icon:'🖥️', type:'ppt', title:'Ebola Response — Awareness Module', desc:'A 45-minute self-paced module for field volunteers at Solara Global Health Initiative, built end-to-end around Gagné\u2019s Nine Events of Instruction — designed to be completed on a phone the night before deployment.', level:'Field volunteer awareness', engagement:'Solara Global Health Initiative', format:'Self-paced eLearning'},
+      {icon:'🖥️', type:'ppt', title:'Informed Consent — Decision Simulation', desc:'A 20-minute branching simulation for Cascade Clinical Research Institute, rebuilt around Merrill\u2019s First Principles of Instruction — problem-centered rather than topic-centered, with no scored final exam because the goal was rehearsal, not certification.', level:'Clinical research coordinators', engagement:'Cascade Clinical Research Institute', format:'Branching scenario simulation'},
+      {icon:'🖥️', type:'ppt', title:'Code of Conduct — Compliance Course', desc:'A 45-minute mandatory ethics course for Vantor Industries, redesigned against Keller\u2019s ARCS Model to replace a forgettable, low-retention prior version — grounded in a real documented case with a specific financial consequence.', level:'All-employee, mandatory', engagement:'Vantor Industries', format:'Self-paced compliance eLearning'},
+      {icon:'🖥️', type:'ppt', title:'Safety Observation Programme — Interaction Proof-of-Concept', desc:'An 8-minute interaction-only POC for Ironbridge Manufacturing, applying Norman\u2019s principles of visibility, feedback, and constraint — built to prove the navigation model before any content investment.', level:'Frontline/operational staff', engagement:'Ironbridge Manufacturing', format:'Interactive eLearning UX proof-of-concept'},
+      {icon:'🖥️', type:'ppt', title:'Compliance & Product Training — CRT Mockup', desc:'A 40-minute compliance/product module for Ashford Mutual Financial, built under the SAM (Successive Approximation) model — its notes still carry a real early-prototype reviewer comment about a missing exit button, kept in deliberately as evidence the review cycle happened.', level:'All-employee/frontline', engagement:'Ashford Mutual Financial', format:'Self-paced eLearning'}
+    ]}
+  ],
+  caseStudies: [
+    {title:'Ebola Response — Awareness Module', theory:'Gagné\u2019s Nine Events of Instruction', parts:[
+      {t:'The Challenge', body:'Field volunteers were being deployed to outbreak response zones with only days of lead time and wildly inconsistent baseline knowledge of protocol — no time for a multi-week orientation, and no room for gaps.'},
+      {t:'The Approach', body:'Built the entire module around Gagné\u2019s Nine Events end to end: gaining attention with a real outbreak timeline, stating the objective plainly, activating prior general health-training knowledge, chunking content into short segments, and closing with a retention-check summary rather than a single terminal quiz.'},
+      {t:'The Outcome', body:'A 45-minute self-paced module built to run on a phone with unreliable connectivity — a constraint that shaped nearly every design choice more than the content itself did.'},
+      {t:'What I Learned', body:'My regular practice at the time leaned on covering required content thoroughly, on the assumption that thorough coverage produced retention. The realized gap was blunt: content delivered in the wrong order, without a deliberate recall step, doesn\u2019t survive a stressful, low-connectivity context, however accurate it is. Applying Gagné\u2019s Nine Events systematically, rather than intuitively, corrected that. I implemented it by sequencing the module event-by-event rather than section-by-section — attention, objective, recall, and content delivery each got their own deliberate moment, with the phone-first, offline-capable build as the concrete test of whether that structure held up outside a classroom.'}
+    ]},
+    {title:'Informed Consent — Decision Simulation', theory:'Merrill\u2019s First Principles of Instruction', parts:[
+      {t:'The Challenge', body:'Research coordinators tested well on consent regulations, and still handled real, emotionally loaded consent conversations poorly in the field — the training was measuring the wrong thing.'},
+      {t:'The Approach', body:'Rebuilt around Merrill\u2019s First Principles, problem-centered rather than topic-centered: every module opens mid-conversation, activates what the coordinator already knows, demonstrates the skill through a modeled scenario, and only then asks for guided application with real consequences.'},
+      {t:'The Outcome', body:'A 20-minute branching simulation with no scored final exam, deliberately — the goal was rehearsal, not certification, so a wrong choice returns the learner to reconsider rather than penalizing them.'},
+      {t:'What I Learned', body:'My regular practice up to that point defaulted to topic-centered design — teach the regulation, then test recall of it — because that\u2019s what most compliance-adjacent training looks like. The realized gap was that coordinators who tested well still handled real consent conversations poorly, meaning the training measured the wrong competency entirely. Applying Merrill\u2019s First Principles corrected that by starting from the problem, not the topic: every module now opens mid-conversation instead of with a definition. I implemented it by removing the scored final exam and replacing it with a return-and-reconsider mechanic — a wrong choice sends the learner back into the conversation rather than penalizing them, because the goal was rehearsal, not certification.'}
+    ]},
+    {title:'Code of Conduct — Compliance Course', theory:'Keller\u2019s ARCS Model', parts:[
+      {t:'The Challenge', body:'Mandatory ethics training had a well-earned reputation as box-checking — high completion, near-zero retention, no visible change in the behaviors it was meant to prevent.'},
+      {t:'The Approach', body:'Redesigned directly against ARCS: Attention through a real documented case with a specific financial consequence instead of abstract principles, Relevance by opening every scenario inside the employee\u2019s own function, Confidence through low-stakes practice before the graded assessment, and Satisfaction through feedback tied to actual policy language rather than a generic right/wrong.'},
+      {t:'The Outcome', body:'A 45-minute mandatory course that keeps the case-based framing from the first minute to the last — the single biggest change from the version it replaced.'},
+      {t:'What I Learned', body:'My regular practice for mandatory compliance training, like most instructional designers\u2019, treated motivation as something a well-written objective would take care of on its own. The gap that this course\u2019s low retention numbers made undeniable was that abstract principles don\u2019t motivate attention, however clearly they\u2019re written. Applying Keller\u2019s ARCS Model deliberately, factor by factor, corrected that assumption. I implemented it by opening the redesigned course on a real, documented case with a specific dollar figure instead of a policy statement, sequencing low-stakes practice before the graded assessment, and tying feedback to the actual policy language rather than a generic right-or-wrong — changes to sequencing and framing, not to the underlying content.'}
+    ]},
+    {title:'Safety Observation Programme — Interaction Proof-of-Concept', theory:'Norman\u2019s principles of interaction design', parts:[
+      {t:'The Challenge', body:'The content was ready, but pilot users kept losing their place, missing the audio controls, or exiting the course by accident mid-module — a navigation problem masquerading as a content problem.'},
+      {t:'The Approach', body:'Before touching another page of content, built a standalone interaction POC applying Norman\u2019s principles: visibility of system status through a persistent, draggable progress bar, unambiguous affordances for audio control, and constraints that prevent accidental exit entirely rather than warning about it afterward.'},
+      {t:'The Outcome', body:'An 8-minute POC, deliberately not a full course, built solely to get sign-off on the interaction model as its own deliverable before any further content investment.'},
+      {t:'What I Learned', body:'My regular practice, like most instructional designers building for a vendor client, treated interaction design as something the authoring tool handled by default, worth reviewing only once content was mostly finished. The gap became obvious when pilot users lost their place and exited by accident — a navigation failure masquerading as a content failure, one a content-first review would have caught too late to fix cheaply. Applying Norman\u2019s principles of visibility, feedback, and constraint as a standalone design pass, before further content investment, corrected that sequencing. I implemented it by scoping this proof-of-concept narrowly: a persistent draggable progress bar, an unmistakable audio toggle, and constraints that prevent accidental exit outright, all validated before a single additional page of content got built.'}
+    ]},
+    {title:'Compliance & Product Training — CRT Mockup', theory:'SAM (Successive Approximation Model)', parts:[
+      {t:'The Challenge', body:'Compliance and product training at this client had a history of expensive late-stage rebuilds — stakeholders rarely caught real problems until the course was already fully built.'},
+      {t:'The Approach', body:'Ran the build under SAM instead of a linear waterfall: a rough splash-screen prototype went to stakeholders in week one, specifically to surface exactly this kind of interface disagreement early, with rapid review-and-revise cycles built into the schedule rather than saved for the end.'},
+      {t:'The Outcome', body:'A 40-minute module whose review history is part of the deliverable, not scrubbed out of it — a reviewer\u2019s comment about a missing exit button, and the design response explaining why it stayed out, both kept in the notes as evidence the cycle actually happened.', highlight:true},
+      {t:'What I Learned', body:'My regular practice on prior compliance builds followed something close to a waterfall — design, build, then show stakeholders a finished course. The gap that history of expensive late-stage rebuilds exposed was that stakeholders\u2019 real objections only surfaced once the cost of fixing them was highest. Adopting SAM\u2019s rapid-prototyping cycle corrected that sequencing by design, not by accident. I implemented it by sending a rough splash-screen prototype to stakeholders in week one specifically to catch interface disagreements early, then keeping the resulting reviewer pushback — a missing exit button, and the reasoning for leaving it out — visible in the final deliverable\u2019s notes, rather than resolving it quietly and erasing the evidence the review cycle happened.'}
+    ]},
+    {title:'Induction Storyboard — ABC Gaming Arcade', theory:'Malone\u2019s theory of intrinsic motivation', parts:[
+      {t:'The Challenge', body:'New hires were expected to absorb an entire first week\u2019s worth of dense operational policy — safety, customer service, cash handling, equipment — delivered as a slide deck nobody remembered past day three.'},
+      {t:'The Approach', body:'Storyboarded the induction around Malone\u2019s three levers for intrinsic motivation — challenge, through a light points system tied to policy scenarios rather than trivia; curiosity, by withholding a detail until a scenario made the learner want it; and fantasy, by framing the first week as a "level" rather than a checklist — specified screen by screen before development began.'},
+      {t:'The Outcome', body:'A 12-screen storyboard for one 30-minute module inside a larger, roughly three-hour induction program spanning several modules — narration, visual description, interaction spec, and branching logic per screen, giving the development team an unambiguous build target for that module rather than a concept to interpret.'},
+      {t:'What I Learned', body:'My regular practice for new-hire onboarding content, like most vendors I’d worked alongside, treated policy training as something to cover completely and hope was memorable. The gap this project made concrete was that comprehensiveness and memorability pull against each other — the version this replaced covered everything and was remembered by nobody past day three. Applying Malone’s three levers for intrinsic motivation corrected that trade-off by design. I implemented it by storyboarding one module at a time rather than attempting the whole multi-hour induction program at this level of detail up front — a points system tied to scenarios rather than trivia, a withheld detail that made the next scene worth reaching, and a ‘level’ framing instead of a checklist, specified screen by screen before development began on that module.'}
+    ]},
+    {title:'Facilitator Guide — Lessons in Hindsight', theory:'Argyris\u2019s double-loop learning', parts:[
+      {t:'The Challenge', body:'Distributed, multicultural project teams kept repeating the same category of cross-border miscommunication even after standard "lessons learned" debriefs, because those debriefs corrected the mistake without ever questioning the assumption that produced it.'},
+      {t:'The Approach', body:'Designed the workshop around double-loop learning rather than single-loop correction: the first half surfaces specific past mistakes, familiar territory, but the second half forces the group to examine the unstated assumption behind the pattern — not what went wrong, but what they believed that made it seem like the right call at the time.'},
+      {t:'The Outcome', body:'A 75-minute facilitator guide for up to 20 attendees, in-person and virtual variants, where the one required output is a team risk self-assessment naming an assumption to test next time — not a list of best practices to remember.'},
+      {t:'What I Learned', body:'My regular practice for post-mortem workshops, like most facilitators, focused on surfacing what went wrong so it wouldn’t happen again — a single-loop correction. The gap became visible once the same category of cross-border miscommunication kept recurring despite repeated debriefs: correcting the mistake without questioning the assumption behind it just meant the pattern resurfaced in a new costume. Applying Argyris’s double-loop learning corrected that by design — the workshop now spends its second half on the unstated assumption, not the specific error. I implemented that in the one required output, a team risk self-assessment naming an assumption to test next time, and learned in facilitating it live that holding a room through the discomfort of questioning an assumption is harder than writing the discussion prompts.'}
+    ]}
+  ],
+  synthesis: 'Seven different theoretical lenses, deliberately — not because each project demanded a different one, but because a single toolkit applied uniformly starts to look like a habit rather than a judgment. Gagné, Merrill, Keller, Norman, SAM, Malone, and Argyris all trace back to the same foundational distinction covered in LT 8000 (Foundations of Instructional Technology): designing for content transfer versus designing for something that survives contact with a real learner in a real context. The six academic case studies elsewhere in this portfolio were chosen to stress-test that same discipline across industries I hadn\u2019t worked in professionally; these seven are the other half of that proof — the same instinct, applied under real deadlines and real stakeholder pushback, across seven genuinely different problems rather than one blended narrative.'
+},
+
+coursework: {
+  eyebrow: 'Additional Coursework · 2025–26',
+  title: 'Coursework in Practice',
+  role: 'Graduate Student',
+  year: '2025–26',
+  duration: '13 artifacts across three courses',
+  skills: ['Computational Thinking','Heuristic Evaluation','Bloom\u2019s Taxonomy Alignment','Sociocultural Theory & Equity-by-Design','Communities of Practice Analysis','Funds of Knowledge','E-Learning Environment Design'],
+  frameworks: ['Nielsen\u2019s 10 Usability Heuristics','Bloom\u2019s Revised Taxonomy','Sfard\u2019s Acquisition/Participation Metaphors','Lave & Wenger\u2019s Communities of Practice','Gutiérrez & Jurow\u2019s Equity-by-Design','Moll et al.\u2019s Funds of Knowledge'],
+  tools: ['Scratch','Code.org (Dance Party AI Edition)','MagicSchool AI','Lucidchart','Camtasia'],
+  themeTabs: [
+    {name:'Computational Thinking', intro:'LT 7501 — Computational Thinking &amp; Human-Computer Interaction. Six artifacts testing whether a design holds up against how a real learner behaves, not how a syllabus assumes they behave.', items:[
+      {icon:'🎮', title:'Drop\u2019s Big Journey — Scratch Water-Cycle Storytelling', desc:'An interactive Scratch story teaching the water cycle to Grades 3\u20135, applying six computational thinking concepts and seven of Nielsen\u2019s usability heuristics.', framework:'Nielsen\u2019s 10 Usability Heuristics', tool:'Scratch', term:'Spring 2026', parts:[
+        {t:'Challenge', body:'Elementary students needed to internalize all four water-cycle stages, but typical CT-forward activities teach programming with no science content, or science content with no CT engagement.'},
+        {t:'Approach', body:'Built the water cycle as a click-driven Scratch narrative, testing every scene against Nielsen\u2019s heuristics as I built rather than checking them off at the end — H8 stripped anything a screen didn\u2019t need in the moment, H2 rewrote scientific language in a child\u2019s actual voice, H5 sequenced choice buttons to appear only after the concept was explained.'},
+        {t:'Outcome', body:'Two real testers — a 10-year-old working alone, and a parent using a structured checklist — independently flagged the same gap (an ending that didn\u2019t feel finished), fixed with a celebration block satisfying H1 and H9.'},
+        {t:'Reflection', body:'My regular practice going into this project was to add supporting elements — extra characters, additional text — whenever I worried a concept needed more scaffolding. The gap became obvious mid-build: every element I added to a scene made it worse, not better, and I kept having to remove things I’d just built. LT 7501’s heuristic-evaluation approach corrected that by giving me a concrete test — does this scene need this element right now? — instead of a vague instinct toward completeness. I implemented that directly by adding a HIDE block to remove Sol from the screen the moment its explanation finished, rather than leaving it visible into the next scene simply because it was already there.'}
+      ]},
+      {icon:'📋', title:'Heuristic Evaluation — Dance Party (AI Edition)', desc:'A full ten-heuristic Nielsen evaluation of Code.org\u2019s Dance Party activity, working through all 12 puzzles and free-build mode.', framework:'Nielsen\u2019s 10 Usability Heuristics', tool:'Code.org (Dance Party AI Edition)', term:'Spring 2026', parts:[
+        {t:'Challenge', body:'Assessing whether a widely used, AI-powered coding activity for upper-elementary and middle-school learners actually supports learning, or just feels engaging.'},
+        {t:'Approach', body:'Tested all ten Nielsen heuristics systematically rather than reacting impressionistically — three passed cleanly (visibility of system status, real-world matching, user control and freedom), three failed outright (aesthetic and minimalist design, help and documentation, recognition rather than recall).'},
+        {t:'Outcome', body:'A specific, testable redesign brief for each failing heuristic — a simplified three-element entry screen, a \u2018how did the AI do that\u2019 explainer, a searchable block toolbox — instead of a general impression of \u2018needs polish.\u2019'},
+        {t:'Reflection', body:'My regular practice when evaluating an ed-tech tool had been to form a general impression — engaging, well-designed, needs polish — without a systematic method behind it. The gap became clear once I tried to defend that impression heuristic by heuristic: three genuinely passed, three genuinely failed, and I couldn’t have named which was which under the old approach. Applying all ten Nielsen heuristics systematically, one at a time, corrected that. I implemented it by writing a specific, testable redesign brief for each failing heuristic rather than a general note — a searchable toolbox for H6, a simplified entry screen for H8 — the kind of recommendation an actual product team could act on.'}
+      ]},
+      {icon:'🤖', title:'Literary Character Chatbot — Mini-Project', desc:'A Scratch mini-project pairing computational thinking directly with a CCSS literary-analysis standard for Grade 10 ELA.', framework:'Bloom\u2019s Revised Taxonomy', tool:'Scratch', term:'Spring 2026', parts:[
+        {t:'Challenge', body:'Literary analysis and computational thinking are taught as unrelated subjects, even though character analysis is itself a kind of conditional logic — motivations branching into actions.'},
+        {t:'Approach', body:'Designed a three-period unit where students encode a character\u2019s conflicting motivations as literal conditional branches in a Scratch chatbot, climbing Bloom\u2019s ladder from recalling CT vocabulary to creating an original, evidence-grounded chatbot.'},
+        {t:'Outcome', body:'A ready-to-use lesson plan with a Bloom\u2019s-mapped objective table, adaptable to any literary text or grade band 9\u201312.'},
+        {t:'Reflection', body:'My regular practice treated computational thinking and literary analysis as separate subjects requiring separate units, because that’s how both are usually taught. The gap I noticed while designing this mini-project was that character analysis is already a form of conditional logic — motivations branching into actions — just never named as such in an ELA classroom. Bloom’s Revised Taxonomy gave me the structure to make that connection explicit rather than incidental. I implemented it by mapping the unit’s objectives directly onto Bloom’s ladder, so that encoding a character’s motivation as a conditional branch in Scratch was the Create-level objective, not a side activity bolted onto the literary analysis.'}
+      ]},
+      {icon:'🗺️', title:'Promoting Computational Thinking — Concept Map', desc:'A concept map comparing four approaches to building CT: Scratch, App Inventor, CS Unplugged, and Google\u2019s Exploring CT.', framework:'Comparative tool analysis', tool:'Lucidchart', term:'Spring 2026', parts:[
+        {t:'Challenge', body:'\u2018CT tools\u2019 gets treated as one interchangeable category, which hides that a physical, unplugged activity teaches something genuinely different from a block-based programming environment.'},
+        {t:'Approach', body:'Mapped four tool categories against a consistent Key Features / Key Limitation structure, forcing an honest trade-off analysis instead of a simple list of options.'},
+        {t:'Outcome', body:'A reusable decision framework for picking the right CT tool for a specific learning goal, rather than defaulting to whichever tool is most familiar.'},
+        {t:'Reflection', body:'My regular practice when comparing instructional tools had been to list their features and pick based on which had the most of them. The gap that approach hides is that a feature list says nothing about where a tool falls short for a specific learner. Structuring this comparison around a Key Features / Key Limitation pairing for each tool corrected that habit. I implemented it by refusing to leave any tool’s limitation blank — CS Unplugged’s lack of automated feedback got named just as clearly as its strength in requiring no computer at all — which is what turned the map into a decision framework rather than a features chart.'}
+      ]},
+      {icon:'🗺️', title:'The Scope of CS and Computing — Concept Map', desc:'A concept map distinguishing computational thinking\u2019s genuine applications from its real limits.', framework:'CT as literacy, with limits', tool:'Lucidchart', term:'Spring 2026', parts:[
+        {t:'Challenge', body:'Computational thinking is often presented as a purely technical skill, without the ethical and epistemological limits professionals actually need to reckon with.'},
+        {t:'Approach', body:'Mapped CT\u2019s applications as a \u2018mental toolkit\u2019 — decomposition, abstraction, heuristic reasoning — directly against its real limitations: the uncomputable, algorithmic bias, and the argument that CS is a tool, not a cure.'},
+        {t:'Outcome', body:'A theory-level artifact that now functions as a personal checklist for evaluating any future CT-based design against its own blind spots.'},
+        {t:'Reflection', body:'My regular practice, like most people introduced to computational thinking, was to treat it as an unambiguously positive mental toolkit worth applying everywhere. The gap surfaced while researching this map: algorithmic bias and the ‘not a universal fix’ critique aren’t footnotes to CT, they’re structurally part of what CT actually is. Mapping applications and limitations as two equally weighted branches, rather than limitations as an afterthought, corrected that framing. I implemented it by giving Limitations the same visual weight as Applications in the map itself, and I’ve since used that same map as a literal checklist when evaluating any AI or CT-based tool professionally.'}
+      ]},
+      {icon:'🎬', title:'Screencast — Computer Hardware, Data &amp; Programming Environments', desc:'A recorded screencast explaining foundational computing concepts for learners with no prior technical background.', framework:'Foundational computing literacy', tool:'Camtasia', term:'Spring 2026', parts:[
+        {t:'Challenge', body:'Foundational computing vocabulary — hardware, data representation, programming environments — is often assumed rather than explicitly taught.'},
+        {t:'Approach', body:'Built a screencast narrating these concepts visually and verbally at the same time, treating foundational literacy as something to be shown, not just defined.'},
+        {t:'Outcome', body:'A reusable explainer that works as a stand-alone orientation for any course assuming baseline computing vocabulary the learner may not actually have.'},
+        {t:'Reflection', body:'My regular practice for explaining foundational technical concepts had been text-first — a written explainer, assuming the vocabulary would land on the page. The gap this screencast exposed was in my own understanding, not just the learner’s: narrating hardware and data representation out loud surfaced places where my explanation was fuzzier than my writing had let on. Building the explanation as spoken narration synced to a visual demonstration, rather than text with illustrations, corrected that gap directly. I implemented it by scripting the narration first and only then building the visual sequence to match it, rather than the reverse.'}
+      ]}
+    ]},
+    {name:'Sociocultural Design', intro:'LT 8130 — Sociocultural and Design-Based Foundations. Four artifacts asking Lave and Wenger\u2019s question: is this built for individual content transfer, or genuine participation in a community of practice?', items:[
+      {icon:'📊', title:'Sociocultural Analysis — A PLM Migration Training Program', desc:'A 15-concept sociocultural audit of a real corporate training program I helped build.', framework:'Sfard; Gutiérrez &amp; Jurow; Lave &amp; Wenger', tool:'N/A — analytical document', term:'Spring 2026', parts:[
+        {t:'Challenge', body:'A corporate PLM migration\u2019s training program looked complete by every completion metric, but experienced engineers were disengaging and new users still struggled on real production days.'},
+        {t:'Approach', body:'Audited the program against 15 sociocultural concepts from the position of having built parts of it myself — naming exactly where equity-by-design broke down (identical pacing for novices and decade-long experts) and where a third space could have bridged old-system expertise into new-system fluency, but didn\u2019t.'},
+        {t:'Outcome', body:'A concrete list of design corrections — role-based differentiation by experience level, not just by job function — that reframes \u2018training completion\u2019 as a genuinely inadequate success metric.', highlight:true},
+        {t:'Reflection', body:'My regular practice as a designer on this program was to treat training completion as the success metric, because that’s the metric the organization asked for and the one every dashboard reported. The realized gap, watching senior engineers disengage in sessions that treated their decade of expertise as invisible, was that completion measures nothing about whether the training actually respected who was in the room. Auditing the program against Sfard’s acquisition/participation metaphors and Gutiérrez and Jurow’s equity-by-design corrected that blind spot theoretically. I implemented that correction as a concrete recommendation — differentiate pacing by experience level, not just by job function — written from the uncomfortable position of critiquing a program I had helped build.'}
+      ]},
+      {icon:'📝', title:'AI Teaching Tool Comparison — Proposal', desc:'A proposal comparing three widely used AI teaching tools against sociocultural theory.', framework:'Lave &amp; Wenger; Gutiérrez', tool:'N/A — comparative proposal', term:'Spring 2026', parts:[
+        {t:'Challenge', body:'Three widely adopted AI teaching tools all present themselves as supporting collaboration and community, untested against an actual theory of what participation requires.'},
+        {t:'Approach', body:'Ran each tool\u2019s actual features — not its marketing language — against Lave and Wenger\u2019s participation framework, finding that even a \u2018co-planning\u2019 feature turned out to mean teachers working alone in parallel, not together.'},
+        {t:'Outcome', body:'A defensible selection of one tool for a deeper redesign project, based on where its gap was clearest and its reach — five million teachers — made the redesign most consequential.'},
+        {t:'Reflection', body:'My regular practice when reading a product’s marketing copy had been to take terms like ‘community’ and ‘collaborative’ at roughly face value. The gap became obvious once I tested those claims against Lave and Wenger’s actual participation framework: a ‘co-planning’ feature turned out to mean teachers working alone in parallel, not together, despite the word choice. Running each tool’s real features against the theory, rather than its own description of itself, corrected that habit. I implemented it by scoring all three tools against the same framework side by side, which is what let me defend one tool as the strongest redesign candidate on evidence, not on which platform used the friendliest language.'}
+      ]},
+      {icon:'🔧', title:'Redesigning an AI Teaching Platform — Final Project', desc:'A full redesign proposing a Community Context Intake and an Asynchronous Lesson Study module.', framework:'Lave &amp; Wenger; Gutiérrez &amp; Jurow; Sfard; Moll et al.', tool:'MagicSchool AI', term:'Spring 2026', parts:[
+        {t:'Challenge', body:'A platform used by five million teachers was built entirely on Sfard\u2019s acquisition metaphor — one teacher, one AI, no colleagues — with real reach but no mechanism for the collaborative Lesson Study that most reliably improves teaching.'},
+        {t:'Approach', body:'Designed two features grounded in theory rather than generic collaboration buzzwords: an eight-question Community Context Intake that activates funds of knowledge before any content generates, and an Asynchronous Lesson Study module connecting teachers across schools around a shared inquiry question.'},
+        {t:'Outcome', body:'A redesign with its own assessment plan built around participation growth and identity shift, not the platform\u2019s original metric of hours saved.'},
+        {t:'Reflection', body:'My regular practice when proposing a product redesign had been to focus almost entirely on the new features themselves, treating success measurement as a secondary detail to work out later. The gap became clear once I tried to write the assessment plan for this redesign: ‘more collaborative’ isn’t measurable on its own, and citing Lave and Wenger doesn’t automatically produce an instrument. Building the assessment plan around participation growth and identity shift, using interaction analysis and longitudinal tracing as actual methods, corrected that gap. I implemented it by designing the Community Context Intake’s eight questions and the Lesson Study module’s structure together with their own measurement plan, rather than proposing the features first and the evaluation as an afterthought.'}
+      ]},
+      {icon:'🖼️', title:'Classroom Video Analysis — Turn-Taking &amp; Participation', desc:'A discourse-analysis diagram mapping teacher-student turn-taking in a bilingual elementary science lesson.', framework:'Discourse / participation-structure analysis', tool:'Video coding &amp; annotation', term:'Spring 2026', parts:[
+        {t:'Challenge', body:'A bilingual elementary science lesson looked, on the surface, like a normal teacher-led discussion — but who actually got a turn, and in which language, was invisible without deliberate coding.'},
+        {t:'Approach', body:'Mapped every teacher-student turn in a lesson on states of matter, including the moment a Spanish-speaking student answered partly in Spanish — a translanguaging move a purely English-coded transcript would have missed entirely.'},
+        {t:'Outcome', body:'A visual record of participation structure — the same lens as the PLM analysis above, turned on a live classroom instead of a corporate training program — that makes an invisible pattern visible enough to actually redesign for.'},
+        {t:'Reflection', body:'My regular practice when watching a classroom recording had been to take general impressions — engaged, on-task, participatory — without a systematic coding method behind them. The gap became obvious once I actually mapped every turn: patterns in who spoke, how often, and in which language were invisible in a casual viewing and unmistakable once coded. Applying a discourse and participation-structure analysis, turn by turn, corrected that. I implemented it by specifically coding the moment a Spanish-speaking student answered partly in Spanish — a translanguaging move a purely English-coded transcript would have missed and marked as a non-response instead of a legitimate contribution.'}
+      ]}
+    ]},
+    {name:'E-Learning Environments', intro:'LT 8440 — E-Learning Environments. Three artifacts working through the course\u2019s opening question: what actually distinguishes e-learning from a course that just happens to be on a screen?', items:[
+      {icon:'🗺️', title:'Personal Definition of E-Learning — Concept Map', desc:'A working personal definition of e-learning mapped before the course\u2019s formal framework was introduced.', framework:'Pre-course baseline', tool:'Lucidchart', term:'Spring 2026', parts:[
+        {t:'Before', body:'My working definition of e-learning going into the course centered on convenience — anytime, anywhere access — with pedagogy as an afterthought.'},
+        {t:'After', body:'Comparing it against the course\u2019s formal framework later exposed the gap directly: convenience was one branch of one category, not the whole picture — Pedagogy, Learner Experience, and Environmental Context were missing entirely from my first draft.'},
+        {t:'Reflection', body:'My regular practice, like most people asked to define e-learning informally, was to describe it by its convenience — access anytime, anywhere — without much attention to pedagogy. The gap only became visible in hindsight, once the course’s formal framework showed that convenience was one branch of one category, not the whole definition. I corrected that gap in the next artifact rather than by quietly revising this one. I implemented the correction by keeping this original definition completely unedited as a baseline, specifically so the growth would be visible by comparison rather than hidden by a quiet update.'}
+      ]},
+      {icon:'🗺️', title:'Formal Definition of E-Learning — Concept Map', desc:'A concept map organizing e-learning across eight interlocking dimensions.', framework:'Course-derived e-learning model', tool:'Lucidchart', term:'Spring 2026', parts:[
+        {t:'Challenge', body:'Reduce \u2018e-learning\u2019 from a vague catch-all term to something specific enough to design against.'},
+        {t:'Approach', body:'Built the concept map as eight interlocking branches — Nature, Delivery Modalities, Pedagogical Drivers, Learner Experience, Environmental Context, Desired Outcomes, Technological Infrastructure, Implementation Barriers — deliberately including Barriers alongside the more commonly cited benefits.'},
+        {t:'Outcome', body:'A working framework used directly in the team chatbot project below, rather than a standalone academic exercise.'},
+        {t:'Reflection', body:'My regular practice, matching the personal definition above, would have organized e-learning around its benefits and left barriers as a closing caveat, if mentioned at all. The gap the course’s framework exposed was that barriers — the digital divide, isolation, self-motivation demands — shape a design as much as any benefit does, and treating them as an afterthought produces designs that only work for learners who don’t face those barriers. Structuring Barriers as its own equally weighted branch corrected that. I implemented it by using this exact eight-branch structure, barriers included, as the working checklist behind the team chatbot project below, rather than treating this map as a standalone academic exercise.'}
+      ]},
+      {icon:'🤖', title:'Team Project — E-Learning Chatbot Development', desc:'A team project building a chatbot-based e-learning tool.', framework:'Delivery Modality &amp; Learner Experience (applied)', tool:'Chatbot-building platform', term:'Spring 2026', parts:[
+        {t:'Challenge', body:'Move from defining e-learning on paper to building something that embodies active participation and adaptive instruction rather than static content delivery.'},
+        {t:'Approach', body:'Built a chatbot-based e-learning tool as a group, deliberately choosing a conversational modality specifically because it forces Learner Experience design decisions a static course wouldn\u2019t require — turn-taking, response personalization, error recovery.'},
+        {t:'Outcome', body:'A working prototype that gave the group a shared, concrete reference point for arguing about e-learning design decisions, rather than an abstract debate.'},
+        {t:'Reflection', body:'My regular practice on group projects like this had been to treat the concept map or framework as the finished deliverable, with the build itself mostly demonstrating the framework had been understood. The gap surfaced the moment we actually built the chatbot: questions the framework never raised — how should the bot recover from a wrong guess, what happens on a repeated error — only appeared once the interaction had to actually function. Treating the framework’s Learner Experience and Delivery Modality branches as build requirements, not just categories, corrected that gap. I implemented it by deliberately choosing a conversational modality specifically because it would force those Learner Experience decisions, rather than picking the format easiest to diagram.'}
+      ]}
+    ]}
+  ]
+}
+
+
+
+  };
+
+  function pfRenderPhase(phase) {
+    const dotClass = phase.on ? 'pf-phase-dot' : 'pf-phase-dot empty';
+    const nameStyle = phase.on ? '' : ' style="color:var(--ink-soft)"';
+    let html = `<div class="pf-phase-block"><div class="pf-phase-head"><div class="${dotClass}">${phase.key}</div><div class="pf-phase-name"${nameStyle}>${phase.name}</div></div>`;
+    if (phase.blurb) html += `<div class="pf-phase-blurb">${phase.blurb}</div>`;
+    html += `</div>`;
+    if (phase.on && phase.artifacts && phase.artifacts.length) {
+      html += `<div class="pf-artifact-grid">` + phase.artifacts.map(a => {
+        const workstream = a.workstream ? `<div class="pf-artifact-workstream">${a.workstream}</div>` : '';
+        let metaLine = '';
+        if (a.level || a.engagement || a.format) {
+          metaLine = `<div class="pf-artifact-meta-line">${[a.level,a.engagement,a.format].filter(Boolean).join(' · ')}</div>`;
+        }
+        return `<a class="pf-artifact" href="#" onclick="return false">
+          <div class="pf-artifact-icon">${a.icon}</div>
+          <div class="pf-artifact-info">
+            ${workstream}
+            <div class="pf-artifact-title">${a.title}</div>
+            <div class="pf-artifact-desc">${a.desc}</div>
+            ${metaLine}
+            <span class="pf-artifact-status">View document →</span>
+          </div>
+        </a>`;
+      }).join('') + `</div>`;
+    } else if (phase.note) {
+      html += `<div class="pf-phase-empty">${phase.note}</div>`;
+    }
+    return html;
+  }
+
+  function pfOpenProject(id) {
+    const d = pfProjects[id];
+    if (!d) return;
+    document.getElementById('pfModalEyebrow').textContent = d.eyebrow;
+    document.getElementById('pfModalTitle').textContent = d.title;
+
+    const sb = document.getElementById('pfSidebar');
+    sb.innerHTML = `
+      <div class="pf-meta-group"><div class="pf-meta-label">Role</div><div class="pf-meta-value">${d.role}</div></div>
+      ${d.client ? `<div class="pf-meta-group"><div class="pf-meta-label">Client</div><div class="pf-meta-value">${d.client}</div><div class="pf-meta-value small">${d.context||''}</div></div>` : (d.context ? `<div class="pf-meta-group"><div class="pf-meta-value small">${d.context}</div></div>` : '')}
+      <div class="pf-meta-group"><div class="pf-meta-label">Year</div><div class="pf-meta-value">${d.year}</div></div>
+      ${d.duration ? `<div class="pf-meta-group"><div class="pf-meta-label">Scope</div><div class="pf-meta-value small">${d.duration}</div></div>` : ''}
+      ${d.skills && d.skills.length ? `<div class="pf-meta-group"><div class="pf-meta-label">Core Skills</div><div class="pf-sidebar-skills">${d.skills.map(s=>`<span class="pf-sidebar-skill">${s}</span>`).join('')}</div></div>` : ''}
+      ${d.frameworks && d.frameworks.length ? `<div class="pf-meta-group"><div class="pf-meta-label">Frameworks</div><div class="pf-sidebar-tools">${d.frameworks.map(t=>`<span class="pf-tool-tag">${t}</span>`).join('')}</div></div>` : ''}
+      ${d.tools && d.tools.length ? `<div class="pf-meta-group"><div class="pf-meta-label">${d.frameworks ? 'Tools' : 'Tools & Frameworks'}</div><div class="pf-sidebar-tools">${d.tools.map(t=>`<span class="pf-tool-tag">${t}</span>`).join('')}</div></div>` : ''}`;
+
+    const tabBar = document.getElementById('pfTabBar');
+    const tabContent = document.getElementById('pfTabContent');
+
+    if (d.themeTabs) {
+      tabBar.innerHTML = d.themeTabs.map((theme,i)=>`<button class="pf-tab-btn compact${i===0?' active':''}" data-tab="${i}">${theme.name}</button>`).join('');
+      tabContent.innerHTML = d.themeTabs.map((theme,i) => `<div class="pf-tab-panel${i===0?' active':''}">
+        <p class="pf-phase-blurb" style="margin-left:0; max-width:none; margin-bottom:20px;">${theme.intro}</p>
+        ${theme.items.map(item => `
+          <div style="margin-bottom:26px; padding-bottom:24px; border-bottom:1px solid var(--line);">
+            <a class="pf-artifact" href="#" onclick="return false" style="margin-bottom:16px;">
+              <div class="pf-artifact-icon">${item.icon}</div>
+              <div class="pf-artifact-info">
+                <div class="pf-artifact-title">${item.title}</div>
+                <div class="pf-artifact-desc">${item.desc}</div>
+                <div class="pf-artifact-meta-line">${[item.framework,item.tool,item.term].filter(Boolean).join(' · ')}</div>
+                <span class="pf-artifact-status">View document →</span>
+              </div>
+            </a>
+            <div class="pf-case-study" style="padding-left:3px;">
+              ${item.parts.map(part=>`<div class="pf-cs-part${part.highlight?' highlight':''}" style="margin-bottom:14px;">
+                <div class="pf-cs-number">${part.t}</div>
+                <div class="pf-cs-body">${part.body}</div>
+              </div>`).join('')}
+            </div>
+          </div>`).join('')}
+      </div>`).join('');
+    } else {
+      const tabs = (d.caseStudy || d.caseStudies) ? ['Overview','Artifacts & Process','Project Story'] : ['Overview','Artifacts & Process'];
+      tabBar.innerHTML = tabs.map((t,i)=>`<button class="pf-tab-btn${i===0?' active':''}" data-tab="${i}">${t}</button>`).join('');
+
+      const overviewHTML = `<div class="pf-tab-panel active pf-overview">${d.overview}</div>`;
+      const artifactsHTML = `<div class="pf-tab-panel pf-overview">${d.phases.map(pfRenderPhase).join('')}</div>`;
+
+      let storyHTML = '';
+      if (d.caseStudy) {
+        storyHTML = `<div class="pf-tab-panel"><div class="pf-case-study">
+          ${d.caseStudy.map(part=>`<div class="pf-cs-part${part.highlight?' highlight':''}">
+            <div class="pf-cs-number">${part.n}</div>
+            <div class="pf-cs-title">${part.t}</div>
+            <div class="pf-cs-body">${part.body}</div>
+          </div>`).join('')}
+        </div></div>`;
+      } else if (d.caseStudies) {
+        storyHTML = `<div class="pf-tab-panel"><div class="pf-case-study">
+          ${d.caseStudies.map(story => `
+            <div style="margin-bottom:6px; padding-bottom:24px; border-bottom:1px solid var(--line);">
+              <div style="display:flex; align-items:baseline; justify-content:space-between; flex-wrap:wrap; gap:8px; margin-bottom:14px;">
+                <div class="pf-cs-title" style="margin-bottom:0;">${story.title}</div>
+                <span class="pf-artifact-workstream" style="margin-bottom:0;">Theory · ${story.theory}</span>
+              </div>
+              ${story.parts.map(part=>`<div class="pf-cs-part${part.highlight?' highlight':''}" style="margin-bottom:14px;">
+                <div class="pf-cs-number">${part.t}</div>
+                <div class="pf-cs-body">${part.body}</div>
+              </div>`).join('')}
+            </div>`).join('')}
+          ${d.synthesis ? `<div class="approach-card" style="margin-top:6px;"><h4>Connecting the Seven</h4><p style="font-size:13.5px;color:var(--ink-soft);margin:0;">${d.synthesis}</p></div>` : ''}
+        </div></div>`;
+      }
+      tabContent.innerHTML = overviewHTML + artifactsHTML + storyHTML;
+    }
+
+    tabBar.querySelectorAll('.pf-tab-btn').forEach((btn,i) => {
+      btn.addEventListener('click', () => {
+        tabBar.querySelectorAll('.pf-tab-btn').forEach(b=>b.classList.remove('active'));
+        btn.classList.add('active');
+        tabContent.querySelectorAll('.pf-tab-panel').forEach((p,j)=>{ p.classList.toggle('active', i===j); });
+      });
     });
+
+    const overlay = document.getElementById('pfOverlay');
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    overlay.scrollTop = 0;
+  }
+
+  function pfCloseModal() {
+    const overlay = document.getElementById('pfOverlay');
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  document.querySelectorAll('.pf-card').forEach(card => {
+    card.addEventListener('click', () => pfOpenProject(card.dataset.id));
+    card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') pfOpenProject(card.dataset.id); });
   });
+  document.getElementById('pfCloseBtn').addEventListener('click', pfCloseModal);
+  document.getElementById('pfOverlay').addEventListener('click', e => { if (e.target.id === 'pfOverlay') pfCloseModal(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') pfCloseModal(); });
 
   // blog topic toggle (visual only)
   document.querySelectorAll('.topic-pill').forEach(p => p.addEventListener('click', () => p.classList.toggle('on')));
