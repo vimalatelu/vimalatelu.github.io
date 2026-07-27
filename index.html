@@ -731,7 +731,7 @@ meridian: {
   </div>`,
   phases: [
     {key:'A', name:'Analysis', on:true, blurb:'Diagnosing whether the gap was a skills problem, a systems problem, or both — before proposing any solution.', artifacts:[
-      {icon:'📋', type:'doc', title:'Root Cause Analysis — Medication Administration Errors', file:'/docs/analysis/Root Cause Analysis.pdf', desc:'Five Whys, a six-category Fishbone diagram, and Gilbert\u2019s BEM applied across all six performance factors — tracing the 11.2% error rate back to a training and performance-support gap left by an EHR rollout, not a nursing competency problem.'},
+      {icon:'📋', type:'doc', title:'Root Cause Analysis — Medication Administration Errors', file:'docs/analysis/RootCauseAnalysis.pdf', desc:'Five Whys, a six-category Fishbone diagram, and Gilbert\u2019s BEM applied across all six performance factors — tracing the 11.2% error rate back to a training and performance-support gap left by an EHR rollout, not a nursing competency problem.'},
       {icon:'📊', type:'doc', title:'Job Task & Cognitive Task Analysis — Registered Nurse, Medication Administration', desc:'A 10-task DIF-rated inventory plus a cognitive task analysis of the five highest-judgment tasks — surfacing the tacit decision-making (cue recognition, alert prioritization, time-pressure triage) that no existing SOP had ever documented.'}
     ]},
     {key:'D', name:'Design', on:false, note:'+ Design artifacts not added yet'},
@@ -1102,14 +1102,16 @@ coursework: {
         if (a.level || a.engagement || a.format) {
           metaLine = `<div class="pf-artifact-meta-line">${[a.level,a.engagement,a.format].filter(Boolean).join(' · ')}</div>`;
         }
-        return `<a class="pf-artifact" href="#" onclick="return false">
+        const linkAttrs = a.file ? `href="${a.file}" download` : `href="#" onclick="return false"`;
+        const statusText = a.file ? 'View Document ⬇' : 'Document coming soon';
+        return `<a class="pf-artifact" ${linkAttrs}>
           <div class="pf-artifact-icon">${a.icon}</div>
           <div class="pf-artifact-info">
             ${workstream}
             <div class="pf-artifact-title">${a.title}</div>
             <div class="pf-artifact-desc">${a.desc}</div>
             ${metaLine}
-            <span class="pf-artifact-status">View document →</span>
+            <span class="pf-artifact-status">${statusText}</span>
           </div>
         </a>`;
       }).join('') + `</div>`;
@@ -1142,15 +1144,18 @@ coursework: {
       tabBar.innerHTML = d.themeTabs.map((theme,i)=>`<button class="pf-tab-btn compact${i===0?' active':''}" data-tab="${i}">${theme.name}</button>`).join('');
       tabContent.innerHTML = d.themeTabs.map((theme,i) => `<div class="pf-tab-panel${i===0?' active':''}">
         <p class="pf-phase-blurb" style="margin-left:0; max-width:none; margin-bottom:20px;">${theme.intro}</p>
-        ${theme.items.map(item => `
+        ${theme.items.map(item => {
+          const linkAttrs = item.file ? `href="${item.file}" download` : `href="#" onclick="return false"`;
+          const statusText = item.file ? 'View Document ⬇' : 'Document coming soon';
+          return `
           <div style="margin-bottom:26px; padding-bottom:24px; border-bottom:1px solid var(--line);">
-            <a class="pf-artifact" href="#" onclick="return false" style="margin-bottom:16px;">
+            <a class="pf-artifact" ${linkAttrs} style="margin-bottom:16px;">
               <div class="pf-artifact-icon">${item.icon}</div>
               <div class="pf-artifact-info">
                 <div class="pf-artifact-title">${item.title}</div>
                 <div class="pf-artifact-desc">${item.desc}</div>
                 <div class="pf-artifact-meta-line">${[item.framework,item.tool,item.term].filter(Boolean).join(' · ')}</div>
-                <span class="pf-artifact-status">View document →</span>
+                <span class="pf-artifact-status">${statusText}</span>
               </div>
             </a>
             <div class="pf-case-study" style="padding-left:3px;">
@@ -1159,7 +1164,8 @@ coursework: {
                 <div class="pf-cs-body">${part.body}</div>
               </div>`).join('')}
             </div>
-          </div>`).join('')}
+          </div>`;
+        }).join('')}
       </div>`).join('');
     } else {
       const tabs = (d.caseStudy || d.caseStudies) ? ['Overview','Artifacts & Process','Project Story'] : ['Overview','Artifacts & Process'];
