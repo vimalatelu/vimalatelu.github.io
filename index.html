@@ -526,7 +526,7 @@
 
         <div class="pf-card reveal" data-category="professional" data-id="professional" style="--accent-c:#FF7F50;" tabindex="0" role="button" aria-haspopup="dialog">
           <div class="pf-card-meta"><span class="pf-card-type">Professional Work Samples</span><span class="pf-card-year">2016–2024</span></div>
-          <h3>Selected Professional Engagements</h3>
+          <h3>Selected Professional Samples</h3>
           <p class="pf-card-hook">Fifteen years across ten industries: full built modules, a UX proof-of-concept, a storyboard, and a live facilitator's workshop — seven engagements, seven different theoretical lenses.</p>
           <div class="pf-card-skills"><span class="pf-skill-tag">eLearning Development</span><span class="pf-skill-tag">Storyboarding</span><span class="pf-skill-tag">Workshop Facilitation</span></div>
           <div class="pf-card-scope"><b>Scope</b><span>7 artifacts · Design + Development</span></div>
@@ -773,8 +773,8 @@ northfield: {
   </div>`,
   phases: [
     {key:'A', name:'Analysis', on:true, blurb:'Two workstreams, two different depths — one fully diagnosed through to a recommendation, one deliberately held at the planning stage until the data says more.', artifacts:[
-      {icon:'📋', type:'doc', workstream:'Workstream · Wafer Cleaning Operators', title:'Client Performance Consulting Report', desc:'The full HPT report: organizational and needs analysis, root cause analysis (BEM + Rummler-Brache + Fishbone), job and cognitive task analysis with DIF ratings, a three-option cost-benefit comparison, and a Kirkpatrick/Phillips evaluation plan — diagnosis through recommendation in one document.'},
-      {icon:'📊', type:'doc', workstream:'Workstream · Program Manager / PLM Transition', title:'Front-End Analysis Plan', desc:'A solution-neutral diagnostic plan — Harless\u2019s 13 Smart Questions, Gilbert\u2019s BEM, Rummler-Brache, Van Tiem\u2019s HPT framework, and the Mager & Pipe flowchart — built to test whether refreshing PM training was actually the right fix before committing to it.'}
+      {icon:'📋', type:'doc', workstream:'Workstream · Wafer Cleaning Operators', title:'Client Performance Consulting Report', file:'./docs/analysis/WaferClientReport.pdf', desc:'The full HPT report: organizational and needs analysis, root cause analysis (BEM + Rummler-Brache + Fishbone), job and cognitive task analysis with DIF ratings, a three-option cost-benefit comparison, and a Kirkpatrick/Phillips evaluation plan — diagnosis through recommendation in one document.'},
+      {icon:'📊', type:'doc', workstream:'Workstream · Program Manager / PLM Transition', title:'Front-End Analysis Plan', file:'./docs/analysis/FrontEndPerformanceAnalysis.pdf',desc:'A solution-neutral diagnostic plan — Harless\u2019s 13 Smart Questions, Gilbert\u2019s BEM, Rummler-Brache, Van Tiem\u2019s HPT framework, and the Mager & Pipe flowchart — built to test whether refreshing PM training was actually the right fix before committing to it.'}
     ]},
     {key:'D', name:'Design', on:false, note:'+ Design artifacts not added yet'},
     {key:'D', name:'Development', on:false, note:'+ Development artifacts not added yet'},
@@ -814,14 +814,14 @@ cyberhygiene: {
   phases: [
     {key:'A', name:'Analysis', on:false, note:'+ Analysis artifacts not added yet'},
     {key:'D', name:'Design', on:true, blurb:'Three personas, one module — a design-implication column that turned description into decisions.', artifacts:[
-      {icon:'📋', type:'doc', title:'Instructional Design Document — Cyber Hygiene for Healthcare', desc:'The full IDD: a goal statement grounded in the HHS Office for Civil Rights\u2019 79% breach-cause statistic, a three-persona learner analysis where each trait maps to a specific design implication rather than just a description, a performance-context analysis, and a task analysis separating recognition from reporting as two distinct cognitive demands.'}
+      {icon:'📋', type:'doc', title:'Instructional Design Document — Cyber Hygiene for Healthcare', file:'./docs/design/InstructionalDesignDocument.pdf', desc:'The full IDD: a goal statement grounded in the HHS Office for Civil Rights\u2019 79% breach-cause statistic, a three-persona learner analysis where each trait maps to a specific design implication rather than just a description, a performance-context analysis, and a task analysis separating recognition from reporting as two distinct cognitive demands.'}
     ]},
     {key:'D', name:'Development', on:true, blurb:'The storyboard content translated into an actual build, narration script and all.', artifacts:[
-      {icon:'🖥️', type:'ppt', title:'eLearning Prototype (Alpha)', desc:'A 29-slide visual and interaction build: scenario-based inbox simulation, drag-and-drop phishing-indicator sorting, reporting workflow walkthrough, and peer-accountability debrief — with the complete narration script included in the speaker notes on 26 of 29 slides, the actual voiceover text carried into the final Storyline build.'}
+      {icon:'🖥️', type:'ppt', title:'eLearning Prototype (Alpha)', file:'./docs/development/CyberHygieneforHealthcare.pdf', desc:'A 29-slide visual and interaction build: scenario-based inbox simulation, drag-and-drop phishing-indicator sorting, reporting workflow walkthrough, and peer-accountability debrief — with the complete narration script included in the speaker notes on 26 of 29 slides, the actual voiceover text carried into the final Storyline build.'}
     ]},
     {key:'I', name:'Implementation', on:false, note:'+ Implementation artifacts not added yet'},
     {key:'E', name:'Evaluation', on:true, blurb:'Refining the module against all three personas before calling it ready.', artifacts:[
-      {icon:'📊', type:'doc', title:'Formative Evaluation Plan — Cyber Hygiene for Healthcare', desc:'A 4-phase formative evaluation methodology (Expert Review, One-to-One Testing, Small Group Pilot, Technical Testing) built to refine the module before full release — evaluation questions framework, observation checklist, and focus group protocol, run against the three learner personas rather than a generic pilot group.'}
+      {icon:'📊', type:'doc', title:'Formative Evaluation Plan — Cyber Hygiene for Healthcare', file:'./docs/evalution_plan/CyberHygeieneforHalthcareFormativeEvaluationPlan.pdf', desc:'A 4-phase formative evaluation methodology (Expert Review, One-to-One Testing, Small Group Pilot, Technical Testing) built to refine the module before full release — evaluation questions framework, observation checklist, and focus group protocol, run against the three learner personas rather than a generic pilot group.'}
     ]}
   ],
   caseStudy: [
@@ -856,10 +856,10 @@ beattheclock: {
   </div>`,
   phases: [
     {key:'PM', name:'Project Planning', on:true, blurb:'The full project-management package: WBS, resource estimate, schedule and cost model, and communication plan.', artifacts:[
-      {icon:'🗂️', type:'doc', title:'Work Breakdown Structure (WBS)', desc:'A 3-level decomposition across all six phases — Project Initiation, Analyze, Design, Develop, Implementation, Evaluation — each work package with a specific completion criterion, an owner, and explicit SME sign-off gates after Analysis and after Design. Approved by all team members.'},
-      {icon:'📊', type:'doc', title:'Resource Estimate', desc:'Role-by-role effort estimates across every work package, benchmarked rather than guessed: the finished module is estimated at 25 minutes of learner time, and our 497-hour development estimate is checked directly against the industry-standard 300:1 development ratio (a 126-hour baseline), with the gap explained by custom visual design, multi-round review, and accessibility compliance.'},
-      {icon:'📅', type:'xlsx', title:'Project Schedule & Cost Estimation', desc:'A 102-day schedule (Oct 2025 – Feb 2026) with task-level start/finish dates, blended hourly rates by role, and a phase-by-phase cost breakdown — Project Management, Analysis, Design, Development, Implementation, Evaluation — totaling $21,046.'},
-      {icon:'💬', type:'doc', title:'Project Communication Plan', desc:'A full stakeholder communication matrix: audience, content, channel, frequency, owner, and escalation path for every role from Project Sponsor down to end learners — the document that decides why a sponsor gets a monthly report while a technical lead gets daily stand-ups during the development sprint.'}
+      {icon:'🗂️', type:'doc', title:'Work Breakdown Structure (WBS)', file:'./docs/misc/WorkBreakdownStructure(WBS)BeattheClockATimeManagementQuest.pdf', desc:'A 3-level decomposition across all six phases — Project Initiation, Analyze, Design, Develop, Implementation, Evaluation — each work package with a specific completion criterion, an owner, and explicit SME sign-off gates after Analysis and after Design. Approved by all team members.'},
+      {icon:'📊', type:'doc', title:'Resource Estimate', file:'./docs/misc/ResourceEstimateBeattheClockATimeManagementQuest.pdf', desc:'Role-by-role effort estimates across every work package, benchmarked rather than guessed: the finished module is estimated at 25 minutes of learner time, and our 497-hour development estimate is checked directly against the industry-standard 300:1 development ratio (a 126-hour baseline), with the gap explained by custom visual design, multi-round review, and accessibility compliance.'},
+      {icon:'📅', type:'xlsx', title:'Project Schedule & Cost Estimation', file:'./docs/misc/ProjectScheduleCostestimation.xlsx', desc:'A 102-day schedule (Oct 2025 – Feb 2026) with task-level start/finish dates, blended hourly rates by role, and a phase-by-phase cost breakdown — Project Management, Analysis, Design, Development, Implementation, Evaluation — totaling $21,046.'},
+      {icon:'💬', type:'doc', title:'Project Communication Plan', file:'./docs/misc/ProjectCommunicationPlan.pdf', desc:'A full stakeholder communication matrix: audience, content, channel, frequency, owner, and escalation path for every role from Project Sponsor down to end learners — the document that decides why a sponsor gets a monthly report while a technical lead gets daily stand-ups during the development sprint.'}
     ]}
   ],
   caseStudy: [
@@ -896,13 +896,14 @@ climatefinance: {
   phases: [
     {key:'A', name:'Analysis', on:false, note:'+ Analysis artifacts not added yet'},
     {key:'D', name:'Design', on:true, blurb:'Turning a needs assessment into a four-objective, Bloom-mapped, 40-hour blended architecture.', artifacts:[
-      {icon:'📋', type:'doc', title:'Design Document — CF-101', desc:'The full instructional blueprint: target-audience analysis grounded in NCF\u2019s own 85-officer needs assessment, four Bloom-mapped objectives up to L6 Create, and the 40-hour blended architecture across Rise 360, Storyline 360, live workshops, and a mentored practicum.'},
-      {icon:'🗂️', type:'doc', title:'Content Analysis — CF-101', desc:'Every piece of content classified by Gagné\u2019s four learning-outcome types and mapped to its task, source material, and required strategy — the document that decided why Module 2 gets a simulation and Module 1 gets a mapping activity, not the reverse.'},
-      {icon:'📊', type:'xlsx', title:'Table of Contents — CF-101', desc:'The full 40-hour build sheet: 24+ items across six modules, each with duration, delivery format, objective, and Bloom\u2019s level — the working document that kept the course\u2019s scope honest against its own design document.'}
+      {icon:'📋', type:'doc', title:'Design Document', file:'./docs/design/DesignDocument.pdf',
+desc:'The full instructional blueprint: target-audience analysis grounded in NCF\u2019s own 85-officer needs assessment, four Bloom-mapped objectives up to L6 Create, and the 40-hour blended architecture across Rise 360, Storyline 360, live workshops, and a mentored practicum.'},
+      {icon:'🗂️', type:'doc', title:'Content Analysis', file:'./docs/design/ContentAnalysis.pdf',desc:'Every piece of content classified by Gagné\u2019s four learning-outcome types and mapped to its task, source material, and required strategy — the document that decided why Module 2 gets a simulation and Module 1 gets a mapping activity, not the reverse.'},
+      {icon:'📊', type:'xlsx', title:'Table of Contents', file:'./docs/design/ToCCF101.xlsx', desc:'The full 40-hour build sheet: 24+ items across six modules, each with duration, delivery format, objective, and Bloom\u2019s level — the working document that kept the course\u2019s scope honest against its own design document.'}
     ]},
     {key:'D', name:'Development', on:false, note:'+ Development artifacts not added yet'},
     {key:'I', name:'Implementation', on:true, blurb:'Coordinating a 12-month, 5-state rollout across three systems that don\u2019t move at the same speed.', artifacts:[
-      {icon:'⚙️', type:'doc', title:'Implementation Plan — CF-101', desc:'The 12-month, 5-state rollout plan coordinating NCF\u2019s delivery team, the National Urban Learning Platform\u2019s technical rollout, and state Urban Development Department sign-off — sequenced across Maharashtra, Tamil Nadu, Karnataka, Rajasthan, and Odisha, with a 40-mentor network onboarded ahead of the first cohort.'}
+      {icon:'⚙️', type:'doc', title:'Implementation Plan', file:'./docs/imp_plan/ImplementationPlanClimateFinanceforCities.pdf', desc:'The 12-month, 5-state rollout plan coordinating NCF\u2019s delivery team, the National Urban Learning Platform\u2019s technical rollout, and state Urban Development Department sign-off — sequenced across Maharashtra, Tamil Nadu, Karnataka, Rajasthan, and Odisha, with a 40-mentor network onboarded ahead of the first cohort.'}
     ]},
     {key:'E', name:'Evaluation', on:false, note:'+ Evaluation artifacts not added yet'}
   ],
@@ -917,7 +918,7 @@ climatefinance: {
 
 professional: {
   eyebrow: 'Professional Work Samples · 2016–2024',
-  title: 'Selected Professional Engagements',
+  title: 'Selected Professional Samples',
   role: 'Senior Instructional Designer / Learning Designer',
   client: 'Seven engagements, fictionalized to protect confidentiality',
   context: 'Financial services · Clinical research · Consumer goods · Healthcare · Manufacturing safety · Consulting',
@@ -932,15 +933,15 @@ professional: {
   </div>`,
   phases: [
     {key:'D', name:'Design', on:true, blurb:'The blueprints — written before anything was built.', artifacts:[
-      {icon:'🗺️', type:'ppt', title:'Induction Storyboard — ABC Gaming Arcade', desc:'A 12-screen blueprint for one 30-minute module inside a larger, roughly three-hour new-hire induction program — narration script, visual descriptions, interaction specs, and branching logic, built around Malone\u2019s theory of intrinsic motivation before any development began.', level:'New-hire induction', engagement:'Gaming/entertainment client', format:'Storyboard (pre-Development blueprint)'},
-      {icon:'👥', type:'ppt', title:'Facilitator Guide — Lessons in Hindsight', desc:'A 75-minute retrospective workshop for distributed, multicultural teams at Larkspur Consulting Group — built around Argyris\u2019s double-loop learning, with in-person and virtual variants and defined facilitator/timekeeper/scribe roles.', level:'Team leads/managers, up to 20 attendees', engagement:'Larkspur Consulting Group', format:'Instructor-led facilitation guide (not eLearning)'}
+      {icon:'🗺️', type:'ppt', title:'Induction Storyboard — ABC Gaming Arcade', file:'./docs/development/ABCGame.pdf', desc:'A 12-screen blueprint for one 30-minute module inside a larger, roughly three-hour new-hire induction program — narration script, visual descriptions, interaction specs, and branching logic, built around Malone\u2019s theory of intrinsic motivation before any development began.', level:'New-hire induction', engagement:'Gaming/entertainment client', format:'Storyboard (pre-Development blueprint)'},
+      {icon:'👥', type:'ppt', title:'Facilitator Guide — Vision 2020', file:'./docs/development/Vision2020.pdf', desc:'A 75-minute retrospective workshop for distributed, multicultural teams at Larkspur Consulting Group — built around Argyris\u2019s double-loop learning, with in-person and virtual variants and defined facilitator/timekeeper/scribe roles.', level:'Team leads/managers, up to 20 attendees', engagement:'Larkspur Consulting Group', format:'Instructor-led facilitation guide (not eLearning)'}
     ]},
     {key:'D', name:'Development', on:true, blurb:'The actual builds — screen-by-screen, captured from the finished product.', artifacts:[
-      {icon:'🖥️', type:'ppt', title:'Ebola Response — Awareness Module', desc:'A 45-minute self-paced module for field volunteers at Solara Global Health Initiative, built end-to-end around Gagné\u2019s Nine Events of Instruction — designed to be completed on a phone the night before deployment.', level:'Field volunteer awareness', engagement:'Solara Global Health Initiative', format:'Self-paced eLearning'},
-      {icon:'🖥️', type:'ppt', title:'Informed Consent — Decision Simulation', desc:'A 20-minute branching simulation for Cascade Clinical Research Institute, rebuilt around Merrill\u2019s First Principles of Instruction — problem-centered rather than topic-centered, with no scored final exam because the goal was rehearsal, not certification.', level:'Clinical research coordinators', engagement:'Cascade Clinical Research Institute', format:'Branching scenario simulation'},
-      {icon:'🖥️', type:'ppt', title:'Code of Conduct — Compliance Course', desc:'A 45-minute mandatory ethics course for Vantor Industries, redesigned against Keller\u2019s ARCS Model to replace a forgettable, low-retention prior version — grounded in a real documented case with a specific financial consequence.', level:'All-employee, mandatory', engagement:'Vantor Industries', format:'Self-paced compliance eLearning'},
-      {icon:'🖥️', type:'ppt', title:'Safety Observation Programme — Interaction Proof-of-Concept', desc:'An 8-minute interaction-only POC for Ironbridge Manufacturing, applying Norman\u2019s principles of visibility, feedback, and constraint — built to prove the navigation model before any content investment.', level:'Frontline/operational staff', engagement:'Ironbridge Manufacturing', format:'Interactive eLearning UX proof-of-concept'},
-      {icon:'🖥️', type:'ppt', title:'Compliance & Product Training — CRT Mockup', desc:'A 40-minute compliance/product module for Ashford Mutual Financial, built under the SAM (Successive Approximation) model — its notes still carry a real early-prototype reviewer comment about a missing exit button, kept in deliberately as evidence the review cycle happened.', level:'All-employee/frontline', engagement:'Ashford Mutual Financial', format:'Self-paced eLearning'}
+      {icon:'🖥️', type:'ppt', title:'Ebola Response', file:'./docs/development/Ebola.pdf', desc:'A 45-minute self-paced module for field volunteers at Solara Global Health Initiative, built end-to-end around Gagné\u2019s Nine Events of Instruction — designed to be completed on a phone the night before deployment.', level:'Field volunteer awareness', engagement:'Solara Global Health Initiative', format:'Self-paced eLearning'},
+      {icon:'🖥️', type:'ppt', title:'Informed Consent', file:'./docs/development/InformedConsent.pdf', desc:'A 20-minute branching simulation for Cascade Clinical Research Institute, rebuilt around Merrill\u2019s First Principles of Instruction — problem-centered rather than topic-centered, with no scored final exam because the goal was rehearsal, not certification.', level:'Clinical research coordinators', engagement:'Cascade Clinical Research Institute', format:'Branching scenario simulation'},
+      {icon:'🖥️', type:'ppt', title:'Code of Conduct', file:'./docs/development/CodeofConduct.pdf' desc:'A 45-minute mandatory ethics course for Vantor Industries, redesigned against Keller\u2019s ARCS Model to replace a forgettable, low-retention prior version — grounded in a real documented case with a specific financial consequence.', level:'All-employee, mandatory', engagement:'Vantor Industries', format:'Self-paced compliance eLearning'},
+      {icon:'🖥️', type:'ppt', title:'Safety Observation Programme', file:'./docs/development/SafetyObservationProgram.pdf' desc:'An 8-minute interaction-only POC for Ironbridge Manufacturing, applying Norman\u2019s principles of visibility, feedback, and constraint — built to prove the navigation model before any content investment.', level:'Frontline/operational staff', engagement:'Ironbridge Manufacturing', format:'Interactive eLearning UX proof-of-concept'},
+      {icon:'🖥️', type:'ppt', title:'Compliance & Product Training', file:'./docs/development/ConductRisk.pdf' desc:'A 40-minute compliance/product module for Ashford Mutual Financial, built under the SAM (Successive Approximation) model — its notes still carry a real early-prototype reviewer comment about a missing exit button, kept in deliberately as evidence the review cycle happened.', level:'All-employee/frontline', engagement:'Ashford Mutual Financial', format:'Self-paced eLearning'}
     ]}
   ],
   caseStudies: [
@@ -1104,7 +1105,7 @@ coursework: {
           metaLine = `<div class="pf-artifact-meta-line">${[a.level,a.engagement,a.format].filter(Boolean).join(' · ')}</div>`;
         }
         const linkAttrs = a.file ? `href="${a.file}" target="_blank" rel="noopener"` : `href="#" onclick="return false"`;
-        const statusText = a.file ? 'View Document ↗' : 'Document coming soon';
+        const statusText = a.file ? 'View Document' : '';
         return `<a class="pf-artifact" ${linkAttrs}>
           <div class="pf-artifact-icon">${a.icon}</div>
           <div class="pf-artifact-info">
